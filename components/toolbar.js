@@ -1,3 +1,5 @@
+// import React from "react"
+
 class Toolbar extends React.Component {
   // Could make this dynamic but probably not worth
   render() {
@@ -25,7 +27,8 @@ class Toolbar extends React.Component {
   }
 }
 
+// export default Toolbar;
 ReactDOM.render(
-  <Toolbar type="false"/>,
+  <Toolbar/>,
   document.getElementById('toolbar-container')
 );
