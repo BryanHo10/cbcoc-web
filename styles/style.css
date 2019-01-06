@@ -1,0 +1,15 @@
+#banner-logo{
+    width:378.69px;
+    height:auto;
+    padding-top: 44px;
+    padding-left:66px;
+}
+.toolbar-links{
+    display: flex;
+    width:100%;
+    justify-content: flex-end;
+}
+.toolbar-links > a{
+    font-size: 20px;
+    color:white;
+}

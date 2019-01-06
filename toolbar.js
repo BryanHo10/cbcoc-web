@@ -3,14 +3,15 @@ class Toolbar extends React.Component {
     return (
       <div>
 	    <a href="">
-	    	<img src="./img/logo_white.png"></img>
+	    	<img id="banner-logo" src="./img/logo_white.png"></img>
       	</a>
-
-        <a href="">ABOUT</a>
-        <a href="">ABOUT</a>
-        <a href="">ABOUT</a>
-        <a href="">ABOUT</a>
-        <a href="">ABOUT</a>
+        <div class="toolbar-links border">
+          <a href="">ABOUT</a>
+          <a href="">ABOUT</a>
+          <a href="">ABOUT</a>
+          <a href="">ABOUT</a>
+          <a href="">ABOUT</a>
+        </div>
       </div>
     );
   }
