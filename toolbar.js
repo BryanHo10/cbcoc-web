@@ -1,14 +1,22 @@
-class HelloMessage extends React.Component {
+class Toolbar extends React.Component {
   render() {
     return (
       <div>
-        Hello {this.props.name}
+	    <a href="">
+	    	<img src="./img/logo_white.png"></img>
+      	</a>
+
+        <a href="">ABOUT</a>
+        <a href="">ABOUT</a>
+        <a href="">ABOUT</a>
+        <a href="">ABOUT</a>
+        <a href="">ABOUT</a>
       </div>
     );
   }
 }
 
 ReactDOM.render(
-  <HelloMessage name="Taylor" />,
+  <Toolbar/>,
   document.getElementById('toolbar-container')
 );
