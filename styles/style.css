@@ -1,13 +1,15 @@
 #banner-logo{
     width:378.69px;
-    height:auto;
-    padding-top: 44px;
+    padding-top:44px;
     padding-left:66px;
+    /*padding: 44px, 0px, 0px, 66px;*/
 }
 .toolbar-links{
+    /*padding: 44px, 66px, 0px, 0px;*/
+    padding-top:44px;
+    padding-right:66px;
     display: flex;
-    width:100%;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 .toolbar-links > a{
     font-size: 20px;
