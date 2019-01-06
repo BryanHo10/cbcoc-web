@@ -1,15 +1,15 @@
 class Toolbar extends React.Component {
   render() {
     return (
-      <div class="container-fluid">
-      <div class="row">
-      <div class="col-sm">
+      <div className="container-fluid">
+      <div className="row">
+      <div className="col-sm">
 	      <a href="./home.html">
 	    	  <img id="banner-logo" src="./img/logo_white.png"></img>
       	</a>
       </div>
-      <div class="col-sm">
-        <div class="toolbar-links">
+      <div className="col-sm">
+        <div className="toolbar-links">
           <a href="">ABOUT</a>
           <a href="">MINISTRIES</a>
           <a href="">EVENTS</a>
