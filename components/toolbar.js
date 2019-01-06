@@ -1,20 +1,22 @@
 class Toolbar extends React.Component {
+  // Could make this dynamic but probably not worth
   render() {
     return (
       <div className="container-fluid">
       <div className="row">
       <div className="col-sm">
-	      <a href="./home.html">
+	      <a href="home.html">
 	    	  <img id="banner-logo" src="./img/logo_white.png"></img>
       	</a>
       </div>
+
       <div className="col-sm">
         <div className="toolbar-links">
-          <a href="">ABOUT</a>
-          <a href="">MINISTRIES</a>
-          <a href="">EVENTS</a>
-          <a href="">SERMONS</a>
-          <a href="">VISIT</a>
+          <a href="about.html">ABOUT</a>
+          <a href="ministries.html">MINISTRIES</a>
+          <a href="events.html">EVENTS</a>
+          <a href="sermons.html">SERMONS</a>
+          <a href="visit.html">VISIT</a>
         </div>
       </div>
       </div>
@@ -24,6 +26,6 @@ class Toolbar extends React.Component {
 }
 
 ReactDOM.render(
-  <Toolbar/>,
+  <Toolbar type="false"/>,
   document.getElementById('toolbar-container')
 );

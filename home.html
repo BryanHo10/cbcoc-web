@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Add React in One Minute</title>
+    <title>CBCOC</title>
   </head>
   <body style="background-color:gray">
 
@@ -10,17 +10,16 @@
     <div id="toolbar-container"></div>
     <div id="footer-container"></div>
 
-    <!-- Load React. -->
-    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <!-- Load our React component. -->
-    <script type="text/babel" src="./components/toolbar.js"></script>
-    <script type="text/babel" src="./components/footerNav.js"></script>
-  
+    <!-- Import -->
+    <script src="lib/react.js"></script>
+    <script src="lib/react-dom.js"></script>
+    <script src="lib/babel.js"></script>
+    
+    <link rel="stylesheet" href="lib/bootstrap.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script type="text/babel" src="components/toolbar.js"></script>
+    <script type="text/babel" src="components/footerNav.js"></script>
 
   </body>
 </html>
