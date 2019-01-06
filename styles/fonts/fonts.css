@@ -1,0 +1,44 @@
+@font-face {
+	font-family: "Gothic-Book";
+	src:url("Gotham-Book.otf");
+}
+@font-face {
+	font-family: "Gothic-BookItalic";
+	src:url("Gotham-BookItalic.otf");
+}
+@font-face{
+	font-family: "SourceSerifPro" ;
+	src: url("SourceSerifPro-Regular.ttf");
+}
+@font-face{
+	font-family: "SourceSerifPro-Bold";
+	src:url("SourceSerifPro-Bold.ttf");
+}
+@font-face{
+	font-family: "SourceSerifPro-SemiBold";
+	src:url("SourceSerifPro-Semibold.ttf");
+}
+@font-face{
+	font-family: "Gotham-Bold";
+	src: url("GOTHAM-BOLD.ttf");
+}
+@font-face{
+	font-family:"Gotham-BoldItalic" ;
+	src:url("GOTHAM-BOLDITALIC.ttf");
+}
+@font-face{
+	font-family: "Gotham-Medium";
+	src:url("Gotham-Medium.otf");
+}
+@font-face{
+    font-family: "font-solid";
+    src:url("fa-solid-900.ttf");
+}
+@font-face{
+    font-family: "font-brands";
+    src:url("fa-brands-400.ttf");
+}
+@font-face{
+    font-family: "font-regular";
+    src:url("fa-regular-400.ttf");
+}

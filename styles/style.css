@@ -1,3 +1,7 @@
+/* Include font css */
+@import url("./fonts/fonts.css");
+
+
 #banner-logo{
     width:378.69px;
     padding-top:44px;
@@ -14,4 +18,37 @@
 .toolbar-links > a{
     font-size: 20px;
     color:white;
+}
+
+/* Footer Style */
+
+.sub-list{
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+.sub-list > li > a{
+    color:white;
+
+}
+#footer-nav{
+    margin: auto;
+    width:80%;
+    padding-bottom: 50px;
+}
+.foot-head{
+    color:#55D4FF;
+}
+
+#contact-info {
+    font-size:15px;
+    color:white;
+}
+#social-icons >li{
+    display:inline;
+}
+#social-icons >li >a {
+    font-family: 'font-brands';
+    font-size:20px;
 }
