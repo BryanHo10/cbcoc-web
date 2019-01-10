@@ -1,12 +1,15 @@
 /* Include font css */
 @import url("./fonts/fonts.css");
 
-
-#banner-logo{    
-    padding-top:44px;
-    padding-left:66px;
-
-    width:378.69px;
+.darkblue-tag{
+    color:#051C34;
+}
+.lightblue-tag{
+    color:#55D4FF;
+}
+.anchor-labels{
+    color:#051C34;
+    font-size: 150%;
 }
 #intro-image {
     width:100%;
@@ -18,7 +21,17 @@
     position:absolute;
     z-index:-1;
 }
+/* Toolbar Style */
+#toolbar-container {
+    width:100%;
+}
 
+#banner-logo{    
+    padding-top:44px;
+    padding-left:66px;
+
+    width:378.69px;
+}
 .toolbar-links {
     display: flex;
     justify-content: space-between;
@@ -33,7 +46,11 @@
 }
 
 /* Footer Style */
-
+#footer-container{
+    padding-top: 50px;
+    width:100%;
+    background-color: #051C34;
+}
 .sub-list{
     list-style-type: none;
   margin: 0;
@@ -46,7 +63,7 @@
 }
 #footer-nav{
     margin: auto;
-    width:80%;
+    width:87%;
     padding-bottom: 50px;
 }
 .foot-head{
@@ -61,6 +78,31 @@
     display:inline;
 }
 #social-icons >li >a {
+    justify-content: space-between;
     font-family: 'font-brands';
-    font-size:20px;
+    font-size:250%;
+    padding-right:5%;
+}
+#copyright-cbcoc{
+    padding-left: 15%;
+    font-size:8px;
+    color:#55D4FF;
+}
+
+/* Services Style */
+#services-container{
+    background-color: #F2F4F4;
+}
+#service-title{
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+#service-info{
+    padding-bottom: 100px;
+    width:85%;
+    margin: auto;
+}
+#service-center{
+    border-left: 2px solid  rgb(178, 179, 179);
+    border-right: 2px solid  rgb(178, 179, 179);
 }

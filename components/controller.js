@@ -1,21 +1,24 @@
-// import React from "react"
-// import Toolbar from "./toolbar"
-// import FooterNav from "./footerNav"
-// 
+// import Toolbar from "./toolbar.js"
+// import FooterNav from "./footerNav.js"
+// import Main from "./main.js"
+
+
+
 class Controller extends React.Component{
 
     render(){
         return(
         <div>
-            // <Toolbar/>
-            // <footerNav/>
+            <Toolbar/>
+            <Main/>
+            <FooterNav/>
         </div>);
     }
 }
 
-export default Controller
+export default Controller;
 
 ReactDOM.render(
     <Controller/>,
-    document.getElementById('footer-container')
+    document.getElementById('app-container')
   );

@@ -2,7 +2,7 @@ class FooterNav extends React.Component{
 
     render(){
         return(
-        <div>
+        <div className="container-fluid">
             <div id="footer-nav"className="container-fluid border-bottom">
             <div className="container-fluid">
             <div className="row">
@@ -53,11 +53,11 @@ class FooterNav extends React.Component{
             </div>
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-sm">
+                    <div className="col-sm border">
                     <a href="home.html">
 	    	             <img id="banner-logo" src="./img/logo_blue.png"></img>
                 	</a>
-                    <p>Copyright © 2018 Chinese Baptist Church of Orange County. All rights reserved.</p>
+                        <p id="copyright-cbcoc" className="py-4">Copyright © 2018 Chinese Baptist Church of Orange County. All rights reserved.</p>
                     </div>
                     <div className="col-sm">
                         <ul id="social-icons">
@@ -78,5 +78,5 @@ class FooterNav extends React.Component{
 // export default FooterNav;
 ReactDOM.render(
     <FooterNav/>,
-    document.getElementById('footer-nav')
+    document.getElementById('footer-container')
   );
