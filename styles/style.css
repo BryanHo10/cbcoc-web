@@ -77,11 +77,21 @@
 #social-icons >li{
     display:inline;
 }
-#social-icons >li >a {
+#social-icons-b {
     justify-content: space-between;
     font-family: 'font-brands';
     font-size:250%;
     padding-right:5%;
+    text-decoration: none;
+    color:#55D4FF;
+}
+#social-icons-r {
+    justify-content: space-between;
+    font-family: 'font-regular';
+    font-size:250%;
+    padding-right:5%;
+    text-decoration: none;
+    color:#55D4FF;
 }
 #copyright-cbcoc{
     padding-left: 15%;

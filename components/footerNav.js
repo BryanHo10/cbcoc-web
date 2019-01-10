@@ -53,7 +53,7 @@ class FooterNav extends React.Component{
             </div>
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-sm border">
+                    <div className="col-sm">
                     <a href="home.html">
 	    	             <img id="banner-logo" src="./img/logo_blue.png"></img>
                 	</a>
@@ -61,10 +61,10 @@ class FooterNav extends React.Component{
                     </div>
                     <div className="col-sm">
                         <ul id="social-icons">
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
+                            <li><a id="social-icons-b" href=""></a></li>
+                            <li><a id="social-icons-b" href=""></a></li>
+                            <li><a id="social-icons-b" href=""></a></li>
+                            <li><a id="social-icons-r" href=""></a></li>
                         </ul>
 
                     </div>
