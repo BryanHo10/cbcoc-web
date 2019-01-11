@@ -1,10 +1,10 @@
-// import React from "react"
 const Router = window.ReactRouterDOM.BrowserRouter;
 const Route =  window.ReactRouterDOM.Route;
 const Link =  window.ReactRouterDOM.Link;
 const Prompt =  window.ReactRouterDOM.Prompt;
 const Switch = window.ReactRouterDOM.Switch;
 const Redirect = window.ReactRouterDOM.Redirect;
+
 class Toolbar extends React.Component {
   // Could make this dynamic but probably not worth
   render() {
