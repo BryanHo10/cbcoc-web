@@ -33,19 +33,9 @@
 /* Footer */
 
 #footer-container {
+    background-color: var(--darkblue);
     padding-top: 50px;
     width: 100%;
-    background-color: var(--darkblue);
-}
-
-.sub-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.sub-list > li > a {
-    color: white;
 }
 
 #footer-nav {
@@ -56,6 +46,16 @@
 
 .footer-head {
     color: var(--lightblue);
+}
+
+.sub-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sub-list > li > a {
+    color: white;
 }
 
 #contact-info {
@@ -100,7 +100,6 @@
 .lightblue-tag {
     color: var(--lightblue);
 }
-
 
 /* Jumbotron */
 
