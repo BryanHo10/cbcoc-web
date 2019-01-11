@@ -21,6 +21,44 @@
     position:absolute;
     z-index:-1;
 }
+
+.intro {
+    height:90vh;
+    width:100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*border:5px black solid;*/
+    
+}
+
+.intro > h2 {
+    font-weight: 700;
+    font-size: 500%;
+    color:white;
+
+    text-align: center;
+    padding-top: -5vh;
+}
+
+.intro > h3 {
+    /*display:table-row;*/
+    font-weight: 400;
+    font-size: 300%;
+    color:white;
+
+    text-align: center;
+    /*border:5px blue solid;*/
+    padding-top: 5vh;
+}
+
+/* probably proper solution without buffer */
+.intro > .buffer {
+    height:10vh;
+}
+
+
 /* Toolbar Style */
 #toolbar-container {
     width:100%;
