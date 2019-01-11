@@ -58,6 +58,7 @@
   
 }
 .sub-list > li > a{
+    font-size:15px;
     color:white;
 
 }
@@ -104,11 +105,11 @@
     background-color: #F2F4F4;
 }
 #service-title{
-    padding-top: 75px;
+    padding-top: 125px;
     padding-bottom: 75px;
 }
 #service-info{
-    padding-bottom: 100px;
+    padding-bottom: 150px;
     width:85%;
     margin: auto;
 }
