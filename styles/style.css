@@ -59,18 +59,18 @@
 }
 
 
-/* Toolbar Style */
-#toolbar-container {
+/* Header Style */
+#header-container {
     width:100%;
 }
 
-#banner-logo{    
+#header-logo{    
     padding-top:44px;
     padding-left:66px;
 
     width:378.69px;
 }
-.toolbar-links {
+.header-links {
     display: flex;
     justify-content: space-between;
 
@@ -78,7 +78,7 @@
     padding-top:44px;
     padding-right:66px;
 }
-.toolbar-links > a {
+.header-links > a {
     font-size: 20px;
     color:white;
 }
