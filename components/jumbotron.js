@@ -1,4 +1,4 @@
-//Main(image, title, title2, description)
+//Jumbotron (image, title, title2, description)
 
 // Used for :
 // Welcome, CYF, Vision, CTs, CLAY, Young Family Fellowship, Friends Of Jesus
@@ -6,7 +6,7 @@
 // Upcoming Events, Mission Trips, Tijuana, Pala, Many Farms, Honduras
 // Belize, East Asia, Fellowshop Groups, Event Name, Blast, etc
 
-class Main extends React.Component {
+class Jumbotron extends React.Component {
   //Probably should take a MainObject instead of individual props.
   render() {
     return (
@@ -24,7 +24,7 @@ class Main extends React.Component {
 }
 
 ReactDOM.render(
-  <Main 
+  <Jumbotron 
     image="church.png" 
     title="WELCOME" 
     title2="" 
