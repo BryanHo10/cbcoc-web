@@ -9,7 +9,7 @@ class Controller extends React.Component{
     render(){
         return(
         <div>
-            <Toolbar/>
+            <Header/>
             <Main/>
             <FooterNav/>
         </div>);

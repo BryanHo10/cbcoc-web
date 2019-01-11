@@ -1,55 +1,61 @@
-/* Include font css */
 @import url("./fonts/fonts.css");
 
-.darkblue-tag{
-    color:#051C34;
-}
-.lightblue-tag{
-    color:#55D4FF;
-}
-.anchor-labels{
-    color:#051C34;
-    font-size: 150%;
-}
-#intro-image {
-    width:100%;
-    height:100%;
-
-    top:0px;
-    left:0px;
-
-    position:absolute;
-    z-index:-1;
-}
-/* Toolbar Style */
-#toolbar-container {
-    width:100%;
+:root{
+    --darkblue:#051C34;
+    --lightblue:#55D4FF;
 }
 
-#banner-logo{    
-    padding-top:44px;
-    padding-left:66px;
+/* Toolbar */
 
-    width:378.69px;
+#header-container {
+    width: 100%;
 }
-.toolbar-links {
+
+#header-logo {
+    padding-top: 44px;
+    padding-left: 66px;
+    width: 378.69px;
+}
+
+.header-links {
     display: flex;
     justify-content: space-between;
-
-    /*padding: 44px, 66px, 0px, 0px;*/
-    padding-top:44px;
-    padding-right:66px;
+    /*padding: 44px, 66px, 0, 0;*/
+    padding-top: 44px;
+    padding-right: 66px;
 }
-.toolbar-links > a {
+
+.header-links>a {
     font-size: 20px;
-    color:white;
+    color: white;
 }
 
-/* Footer Style */
-#footer-container{
+/* Footer */
+
+#footer-container {
+    background-color: var(--darkblue);
     padding-top: 50px;
-    width:100%;
-    background-color: #051C34;
+    width: 100%;
+}
+
+
+#footer-nav {
+    margin: auto;
+    width: 87%;
+    padding-bottom: 50px;
+}
+
+.footer-head {
+    color: var(--lightblue);
+}
+
+#contact-info {
+    font-size: 15px;
+    color: white;
+}
+
+#social-icons > li {
+    display: inline;
 }
 .sub-list{
     list-style-type: none;
@@ -61,49 +67,87 @@
     font-size:15px;
     color:white;
 
-}
-#footer-nav{
-    margin: auto;
-    width:87%;
-    padding-bottom: 50px;
-}
-.foot-head{
-    color:#55D4FF;
-}
 
-#contact-info {
-    font-size:15px;
-    color:white;
-}
-#social-icons >li{
-    display:inline;
-}
 #social-icons-b {
     justify-content: space-between;
     font-family: 'font-brands';
-    font-size:250%;
-    padding-right:5%;
+    font-size: 250%;
+    padding-right: 5%;
     text-decoration: none;
-    color:#55D4FF;
+    color: var(--lightblue);
 }
+
 #social-icons-r {
     justify-content: space-between;
     font-family: 'font-regular';
-    font-size:250%;
-    padding-right:5%;
+    font-size: 250%;
+    padding-right: 5%;
     text-decoration: none;
-    color:#55D4FF;
+    color: var(--lightblue);
 }
-#copyright-cbcoc{
+
+#copyright-cbcoc {
     padding-left: 15%;
-    font-size:8px;
-    color:#55D4FF;
+    font-size: 8px;
+    color: var(--lightblue);
+}
+
+/* Service */
+
+.darkblue-tag {
+    color: var(--darkblue);
+}
+
+.lightblue-tag {
+    color: var(--lightblue);
+}
+
+/* Jumbotron */
+
+#jumbo-image {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.jumbo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 90vh;
+    width: 100%;
+}
+
+.jumbo > h2 {
+    font-weight: 700;
+    font-size: 500%;
+    color: white;
+    text-align: center;
+    padding-top: -5vh;
+}
+
+.jumbo > h3 {
+    font-weight: 400;
+    font-size: 300%;
+    color: white;
+    text-align: center;
+    padding-top: 5vh;
+}
+
+.jumbo > .jumbo-buffer {
+    height: 10vh;  /* TODO : solution without buffer */
 }
 
 /* Services Style */
-#services-container{
+
+#services-container {
     background-color: #F2F4F4;
 }
+<<<<<<< HEAD
 #service-title{
     padding-top: 125px;
     padding-bottom: 75px;
@@ -113,7 +157,15 @@
     width:85%;
     margin: auto;
 }
-#service-center{
-    border-left: 2px solid  rgb(178, 179, 179);
-    border-right: 2px solid  rgb(178, 179, 179);
+
+#service-center {
+    border-left: 2px solid rgb(178, 179, 179);
+    border-right: 2px solid rgb(178, 179, 179);
+}
+
+/* Unused */
+
+.anchor-labels {
+    color: var(--lightblue);
+    font-size: 150%;
 }

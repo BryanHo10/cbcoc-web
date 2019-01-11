@@ -15,7 +15,7 @@ class FooterNav extends React.Component{
                 <div className="container-fluid">
                 <div className="row">
                     <div className="col-sm">
-                        <p className="foot-head"><b>ABOUT</b></p>
+                        <p className="footer-head"><b>ABOUT</b></p>
                         <ul className="sub-list">
                             <li><a href="">Vision</a></li>
                             <li><a href="">Statement of Faith</a></li>
@@ -24,21 +24,21 @@ class FooterNav extends React.Component{
 
                     </div>
                     <div className="col-sm">
-                        <p className="foot-head"><b>MINISTRIES</b></p>
+                        <p className="footer-head"><b>MINISTRIES</b></p>
                         <ul className="sub-list">
                             <li><a href="">Fellowship Groups</a></li>
                             <li><a href="">Mission Trips</a></li>
                         </ul>
                     </div>
                     <div className="col-sm">
-                        <p className="foot-head"><b>EVENTS</b></p>
+                        <p className="footer-head"><b>EVENTS</b></p>
                         <ul className="sub-list">
                             <li><a href="">Upcoming Events</a></li>
                             <li><a href="">Calendar</a></li>
                         </ul>
                     </div>
                     <div className="col-sm">
-                        <p className="foot-head"><b>SERMONS</b></p>
+                        <p className="footer-head"><b>SERMONS</b></p>
                         <ul className="sub-list">
                             <li><a href="">English</a></li>
                             <li><a href="">Mandarin</a></li>
