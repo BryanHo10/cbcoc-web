@@ -10,14 +10,14 @@ class Jumbotron extends React.Component {
   //Probably should take a MainObject instead of individual props.
   render() {
     return (
-      <div className="intro">
-        <img src={"../img/" + this.props.image} id="intro-image"/>
+      <div className="jumbo">
+        <img src={"../img/" + this.props.image} id="jumbo-image"/>
         
         <h2>{this.props.title}</h2>
         <h2>{this.props.title2}</h2>
         <h3>{this.props.description}</h3>
 
-        <div className="buffer"></div>
+        <div className="jumbo-buffer"></div>
       </div>
     );
   }
@@ -30,7 +30,7 @@ ReactDOM.render(
     title2="" 
     description="Come for a visit this Sunday!"
   />,
-  document.getElementById('intro-container')
+  document.getElementById('jumbo-container')
 );
 
 
