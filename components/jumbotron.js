@@ -17,7 +17,7 @@ class Jumbotron extends React.Component {
         <h2>{this.props.title2}</h2>
         <h3>{this.props.description}</h3>
 
-        <div className="jumbo-buffer"></div>
+        {/* <div className="jumbo-buffer"></div> */}
       </div>
     );
   }

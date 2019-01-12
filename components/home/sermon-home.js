@@ -3,32 +3,32 @@ class Sermon_Home extends React.Component {
     render() {
       
       return (
-        <div>
-            <div id="service-title" className="container-fluid">
-              <h3 className="darkblue-tag text-center">Sunday Service Times</h3>
+        <Router>
+        <div className="container-fluid">
+          <div className="row">
+              
+            <div id="latest-info" className="col-sm">
+              <h3 className="darkblue-tag">{this.props.title}</h3>
+              <p>{this.props.passage}</p>
+              <p>{this.props.speaker}</p>
+
+              <Link to="/sermons" id="latest-button" className="btn border">Listen Now</Link>
             </div>
-            <div>
-              <div id="service-info" className="row">
-                <div className="col-sm text-center ">
-                  <h5 className="lightblue-tag">English Service</h5>
-                  <p>9:15 - 10:30 AM <br/>Fellowship Hall</p>
-                </div>
-                <div id="service-center" className="col-sm text-center">
-                  <h5 className="lightblue-tag">Mandarin Service</h5>
-                  <p>9:15 - 10:30 AM <br/>Sanctuary</p>
-                </div>
-                <div className="col-sm text-center ">
-                  <h5 className="lightblue-tag">Bilingual Service</h5>
-                  <p>10:45 AM - 12:00 PM <br/>Sanctuary</p>
-                </div>
-              </div>
+            <div className="col-sm border">
+            <img id="bible-img"src="../../img/bible.png" ></img>
             </div>
+          </div>
         </div>
+        </Router>
       );
     }
   }
   
   ReactDOM.render(
-    <Sermon_Home/>,
+    <Sermon_Home
+      title="Latest Sermon"
+      passage="Hear the most recent sermon or catch up on those from prior months"
+      speaker="Jamie Kwok"
+    />,
     document.getElementById('latest-container')
   );
