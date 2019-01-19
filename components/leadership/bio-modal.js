@@ -16,9 +16,9 @@ class Leader_Card extends React.Component {
     render() {
       
       return (
-        <div className="col-md-4 border">
+        <div className="col-md-4">
                 {/* <!-- Trigger the modal with a clickable card of leader's picture and name --> */}
-                <div className="container text-center " data-toggle="modal" data-target={"#"+this.props.id}>
+                <div className="container text-center border" data-toggle="modal" data-target={"#"+this.props.id}>
                     <img className="leader-img-card" src={"../img/leadership/" + this.props.id+".jpg"}/>
                     <h3>{this.props.name}</h3>
                     <p>{this.props.title}</p>
@@ -54,6 +54,7 @@ class Leader_Card extends React.Component {
   }
 
   function handleLeaderInfo(){
+    //   JSON content stored in a string is temporary
       let obj = JSON.parse(`{
         "leaders":
             [
@@ -136,6 +137,8 @@ class Leader_Card extends React.Component {
 
   ReactDOM.render(
       <div className="row">
+
+        {/* Pushing each item in the list of leaders || staff: Person object */}
         {staffList.map((staff)=>{
             return (
                 <Leader_Card
