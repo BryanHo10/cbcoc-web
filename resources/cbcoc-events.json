@@ -1,0 +1,17 @@
+{
+    "events": [
+        {
+            "name":"",
+            "cover_img_id":"",
+            "sessions":[
+                {
+                    "date":"",
+                    "time":""
+                }
+            ],
+
+            "location":"",
+            "description":""
+        }
+    ]
+}

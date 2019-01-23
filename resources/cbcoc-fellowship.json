@@ -1,167 +1,226 @@
 {
     "fellowships":
         [
+            
             {
-                "name":"",
-                "description":"",
-                "meeting_times":
-                [
-                    ""
-                ],
-                "location":"",
-                "contact":
-                [
+                "target_aud":"Children",
+                "groups":[
                     {
-                        "name":"",
-                        "email":""
+                        "name":"Blast",
+                        "abbrev":"BLAST",
+                        "description":"",
+                        "meeting_times":
+                        [
+                            "Second & Third <br/>Fridays of the Month<br/>7:30 PM"
+                        ],
+                        "location":"CBCOC",
+                        "contact":
+                        [
+                            {
+                                "name":"Samuel Leung",
+                                "email":"fireelements@gmail.com"
+                            }
+                        ],
+                        "audience":"Elementary School",
+                        "id":0
                     }
-                ],
-                "target_aud":"",
-                "id":0
+                ]
             },
             {
-                "name":"",
-                "description":"",
-                "meeting_times":
-                [
-                    ""
-                ],
-                "location":"",
-                "contact":
-                [
+                "target_aud":"Middle/High School",
+                "groups":[
                     {
-                        "name":"",
-                        "email":""
+                        "name":"Christian Youth Fellowship",
+                        "abbrev":"CYF",
+                        "description":"",
+                        "meeting_times":
+                        [
+                            "Every Friday<br/>7:30 PM"
+                        ],
+                        "location":"CBCOC",
+                        "contact":
+                        [
+                            {
+                                "name":"Eugene Kim",
+                                "email":"eugene.s.kim1@gmail.com"
+                            }
+                        ],
+                        "audience":"Junior High & High School",
+                        "id":1
                     }
-                ],
-                "target_aud":"",
-                "id":0
+                ]
             },
             {
-                "name":"",
-                "description":"",
-                "meeting_times":
-                [
-                    ""
-                ],
-                "location":"",
-                "contact":
-                [
+                "target_aud":"College",
+                "groups":[
                     {
-                        "name":"",
-                        "email":""
+                        "name":"Crosstrainers",
+                        "abbrev":"CT",
+                        "description":"",
+                        "meeting_times":
+                        [
+                            "Every Friday<br/>7:30 PM"
+                        ],
+                        "location":"CBCOC",
+                        "contact":
+                        [
+                            {
+                                "name":"Matthew Yang",
+                                "email":"matthewsyang@gmail.com"
+                            },
+                            {
+                                "name":"Donna Wong",
+                                "email":"dw2107@gmail.com"
+                            }
+                        ],
+                        "audience":"College",
+                        "id":0
                     }
-                ],
-                "target_aud":"",
-                "id":0
+                ]
             },
             {
-                "name":"",
-                "description":"",
-                "meeting_times":
-                [
-                    ""
-                ],
-                "location":"",
-                "contact":
-                [
+                "target_aud":"English Young Adult",
+                "groups":[
                     {
-                        "name":"",
-                        "email":""
+                        "name":"Clay",
+                        "abbrev":"CLAY",
+                        "description":"",
+                        "meeting_times":
+                        [
+                            ""
+                        ],
+                        "location":"",
+                        "contact":
+                        [
+                            {
+                                "name":"",
+                                "email":""
+                            }
+                        ],
+                        "audience":"",
+                        "id":0
                     }
-                ],
-                "target_aud":"",
-                "id":0
+                ]
             },
             {
-                "name":"",
-                "description":"",
-                "meeting_times":
-                [
-                    ""
-                ],
-                "location":"",
-                "contact":
-                [
+                "target_aud":"Young Families",
+                "groups":[
                     {
-                        "name":"",
-                        "email":""
+                        "name":"Young Family Fellowship",
+                        "abbrev":"YYF",
+                        "description":"",
+                        "meeting_times":
+                        [
+                            "TBD"
+                        ],
+                        "location":"TBD",
+                        "contact":
+                        [
+                            {
+                                "name":"Anne Yip",
+                                "email":"anneyip@gmail.com"
+                            }
+                        ],
+                        "audience":"Families with young children",
+                        "id":0
                     }
-                ],
-                "target_aud":"",
-                "id":0
+                ]
             },
             {
-                "name":"",
-                "description":"",
-                "meeting_times":
-                [
-                    ""
-                ],
-                "location":"",
-                "contact":
-                [
+                "target_aud":"English Adult",
+                "groups":[
                     {
-                        "name":"",
-                        "email":""
+                        "name":"English Adult Fellowship",
+                        "abbrev":"EAF",
+                        "description":"",
+                        "meeting_times":
+                        [
+                            "TBD"
+                        ],
+                        "location":"TBD",
+                        "contact":
+                        [
+                            {
+                                "name":"Lana Woo",
+                                "email":"lanalwoo@gmail.com"
+                            }
+                        ],
+                        "audience":"English Adult",
+                        "id":0
                     }
-                ],
-                "target_aud":"",
-                "id":0
+                ]
             },
             {
-                "name":"",
-                "description":"",
-                "meeting_times":
-                [
-                    ""
-                ],
-                "location":"",
-                "contact":
-                [
+                "target_aud":"Cantonese Adult",
+                "groups":[
                     {
-                        "name":"",
-                        "email":""
+                        "name":"Friends of Jesus",
+                        "abbrev":"FOJ",
+                        "description":"",
+                        "meeting_times":
+                        [
+                            "Second Fridays of<br/>the month<br/>7:30 PM"
+                        ],
+                        "location":"CBCOC",
+                        "contact":
+                        [
+                            {
+                                "name":"Samuel Kwok",
+                                "email":"samkwok_91773@yahoo.com"
+                            }
+                        ],
+                        "audience":"Cantonese Adult",
+                        "id":0
                     }
-                ],
-                "target_aud":"",
-                "id":0
+                ]
             },
             {
-                "name":"",
-                "description":"",
-                "meeting_times":
-                [
-                    ""
-                ],
-                "location":"",
-                "contact":
-                [
+                "target_aud":"Mandarin Adult",
+                "groups":[
                     {
-                        "name":"",
-                        "email":""
+                        "name":"Mandarin Fellowship",
+                        "abbrev":"N/A",
+                        "description":"",
+                        "meeting_times":
+                        [
+                            ""
+                        ],
+                        "location":"",
+                        "contact":
+                        [
+                            {
+                                "name":"",
+                                "email":""
+                            }
+                        ],
+                        "audience":"",
+                        "id":0
                     }
-                ],
-                "target_aud":"",
-                "id":0
+                ]
             },
             {
-                "name":"",
-                "description":"",
-                "meeting_times":
-                [
-                    ""
-                ],
-                "location":"",
-                "contact":
-                [
+                "target_aud":"Mandarin Young Adult",
+                "groups":[
                     {
-                        "name":"",
-                        "email":""
+                        "name":"ZION",
+                        "abbrev":"ZION",
+                        "description":"",
+                        "meeting_times":
+                        [
+                            "Every Friday<br/>7:30 PM"
+                        ],
+                        "location":"CBCOC",
+                        "contact":
+                        [
+                            {
+                                "name":"Bob Gao",
+                                "email":"gaohezhu@gmail.com"
+                            }
+                        ],
+                        "audience":"Mandarin Young Adult",
+                        "id":0
                     }
-                ],
-                "target_aud":"",
-                "id":0
+                ]
             }
         ]
 }
