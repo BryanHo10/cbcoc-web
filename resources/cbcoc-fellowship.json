@@ -21,8 +21,7 @@
                                 "email":"fireelements@gmail.com"
                             }
                         ],
-                        "audience":"Elementary School",
-                        "id":0
+                        "audience":"Elementary School"
                     }
                 ]
             },
@@ -45,8 +44,7 @@
                                 "email":"eugene.s.kim1@gmail.com"
                             }
                         ],
-                        "audience":"Junior High & High School",
-                        "id":1
+                        "audience":"Junior High & High School"
                     }
                 ]
             },
@@ -73,8 +71,7 @@
                                 "email":"dw2107@gmail.com"
                             }
                         ],
-                        "audience":"College",
-                        "id":0
+                        "audience":"College"
                     }
                 ]
             },
@@ -97,8 +94,7 @@
                                 "email":""
                             }
                         ],
-                        "audience":"",
-                        "id":0
+                        "audience":""
                     }
                 ]
             },
@@ -121,8 +117,7 @@
                                 "email":"anneyip@gmail.com"
                             }
                         ],
-                        "audience":"Families with young children",
-                        "id":0
+                        "audience":"Families with young children"
                     }
                 ]
             },
@@ -145,8 +140,7 @@
                                 "email":"lanalwoo@gmail.com"
                             }
                         ],
-                        "audience":"English Adult",
-                        "id":0
+                        "audience":"English Adult"
                     }
                 ]
             },
@@ -169,8 +163,7 @@
                                 "email":"samkwok_91773@yahoo.com"
                             }
                         ],
-                        "audience":"Cantonese Adult",
-                        "id":0
+                        "audience":"Cantonese Adult"
                     }
                 ]
             },
@@ -193,8 +186,7 @@
                                 "email":""
                             }
                         ],
-                        "audience":"",
-                        "id":0
+                        "audience":""
                     }
                 ]
             },
@@ -217,8 +209,7 @@
                                 "email":"gaohezhu@gmail.com"
                             }
                         ],
-                        "audience":"Mandarin Young Adult",
-                        "id":0
+                        "audience":"Mandarin Young Adult"
                     }
                 ]
             }
