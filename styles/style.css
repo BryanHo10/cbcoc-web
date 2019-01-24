@@ -7,7 +7,16 @@
     --lightgray:rgb(178, 179, 179);
     --eggshell:#F2F4F4;
 }
-
+/* Font styles class names*/
+.fa-solid{
+    font-family: "font-solid"
+}
+.fa-regular{
+    font-family: "font-regular"
+}
+.fa-brands{
+    font-family: "font-brands"
+}
 
 /* Toolbar Style */
 #toolbar-container {
@@ -62,6 +71,9 @@
 #contact-info {
     font-size:15px;
     color:white;
+}
+#social-icons{
+    padding-top:16px;;
 }
 #social-icons >li{
     display:inline;

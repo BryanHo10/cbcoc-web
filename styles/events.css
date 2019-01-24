@@ -1,0 +1,22 @@
+
+
+
+/* Link back to general events page */
+#attach-icon{
+    display:inline;
+}
+#column-info{
+    padding-left:7%;
+}
+#backtrack-events{
+    text-decoration: none;
+    color: var(--darkblue);
+}
+#backtrack-events:hover{
+    text-decoration: none;
+    color: var(--darkblue);
+}
+#backtrack-events{
+    text-decoration: none;
+    color: var(--darkblue);
+}
