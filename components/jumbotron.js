@@ -15,7 +15,7 @@ class Jumbotron extends React.Component {
         
         <h2>{this.props.title}</h2>
         <h2>{this.props.title2}</h2>
-        <h3>{this.props.description}</h3>
+        <h3>{this.props.desc}</h3>
 
         {/* <div className="jumbo-buffer"></div> */}
       </div>
@@ -28,7 +28,7 @@ ReactDOM.render(
     image="church.png" 
     title="WELCOME" 
     title2="" 
-    description="Come for a visit this Sunday!"
+    desc="Come for a visit this Sunday!"
   />,
   document.getElementById('jumbo-container')
 );

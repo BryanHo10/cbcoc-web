@@ -134,6 +134,7 @@ class Leader_Card extends React.Component {
     return obj.leaders;
   }
   let staffList = handleLeaderInfo();
+  console.log(staffList);
 
   ReactDOM.render(
       <div className="row">
