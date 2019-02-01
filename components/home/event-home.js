@@ -11,7 +11,10 @@ class Event_Home extends React.Component {
             <div id = "upcoming-info" className="container border">
               <h3 className="darkblue-tag in-front">{this.props.title}</h3>
               <p>{this.props.description}</p>
-              <Link to="/events" className="darkblue-tag">View Event Details</Link>
+              <Link id="backtrack-events" to="/events">
+                            <h6 id="attach-icon">View Event Details  </h6>
+                            <h6 className="fa-solid" id="attach-icon"></h6>
+                        </Link>
             </div>
             {/* <div id="event-buffer"></div> */}
         </div>

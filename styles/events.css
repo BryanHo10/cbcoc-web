@@ -20,3 +20,12 @@
     text-decoration: none;
     color: var(--darkblue);
 }
+
+/* Event Preview */
+.event-img-card{
+    width:50%;
+    height:auto;
+}
+#short-desc{
+    width:70%;
+}
