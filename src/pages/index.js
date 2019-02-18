@@ -6,13 +6,13 @@ import Jumbotron from "../components/jumbotron"
 export default () => (
   <div style={{ color: `teal` }}>
     {/* <p>Such wow. Very React.</p> */}
-    <Toolbar></Toolbar>
+    <Toolbar/>
     <Jumbotron
         image="church.png" 
         title="WELCOME" 
         title2="" 
         desc="Come for a visit this Sunday!"
     ></Jumbotron>
-    <FooterNav></FooterNav>
+    <FooterNav/>
   </div>
 )
