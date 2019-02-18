@@ -1,4 +1,5 @@
 import React from "react"
+import { withPrefix } from 'gatsby'
 
 class FooterNav extends React.Component{
 
@@ -57,7 +58,7 @@ class FooterNav extends React.Component{
                 <div className="row">
                     <div className="col-md">
                     <a href="home.html">
-	    	             <img id="banner-logo" src="./img/logo_blue.png"></img>
+	    	             <img id="banner-logo" src={withPrefix("/img/logo_blue.png")}></img>
                 	</a>
                         <p id="copyright-cbcoc" className="py-4">Copyright © 2018 Chinese Baptist Church of Orange County. All rights reserved.</p>
                     </div>
