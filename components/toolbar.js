@@ -5,7 +5,6 @@ const Link =  window.ReactRouterDOM.Link;
 const Prompt =  window.ReactRouterDOM.Prompt;
 const Switch = window.ReactRouterDOM.Switch;
 const Redirect = window.ReactRouterDOM.Redirect;
-const WithRouter = window.ReactRouterDOM.WithRouter;
 class Toolbar extends React.Component {
   // Could make this dynamic but probably not worth
   render() {
