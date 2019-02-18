@@ -8,11 +8,11 @@ export default () => (
     {/* <p>Such wow. Very React.</p> */}
     <Toolbar/>
     <Jumbotron
-        image="church.png" 
+        desc="Come for a visit this Sunday!"
+        image="church.png"
         title="WELCOME" 
         title2="" 
-        desc="Come for a visit this Sunday!"
-    ></Jumbotron>
+    />
     <FooterNav/>
   </div>
 )
