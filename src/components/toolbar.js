@@ -9,7 +9,7 @@ class Toolbar extends React.Component {
         <div className="container-fluid">
         <div className="row">
         <div className="col-sm">
-          <Link to="/home">
+          <Link to="/">
             <img id="banner-logo" src={withPrefix("img/logo_white.png")}></img>
           </Link>
         </div>

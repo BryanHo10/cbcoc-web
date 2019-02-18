@@ -1,5 +1,5 @@
 import React from "react"
-import { withPrefix } from 'gatsby'
+import { withPrefix, Link } from 'gatsby'
 
 class FooterNav extends React.Component{
 
@@ -20,32 +20,32 @@ class FooterNav extends React.Component{
                     <div className="col-md">
                         <p className="footer-head"><b>ABOUT</b></p>
                         <ul className="sub-list">
-                            <li><a href="">Vision</a></li>
-                            <li><a href="">Statement of Faith</a></li>
-                            <li><a href="">Leadership</a></li>
+                            <li><Link to="/">Vision</Link></li>
+                            <li><Link to="/">Statement of Faith</Link></li>
+                            <li><Link to="/">Leadership</Link></li>
                         </ul>
 
                     </div>
                     <div className="col-md">
                         <p className="footer-head"><b>MINISTRIES</b></p>
                         <ul className="sub-list">
-                            <li><a href="">Fellowship Groups</a></li>
-                            <li><a href="">Mission Trips</a></li>
+                            <li><Link to="/">Fellowship Groups</Link></li>
+                            <li><Link to="/">Mission Trips</Link></li>
                         </ul>
                     </div>
                     <div className="col-md">
                         <p className="footer-head"><b>EVENTS</b></p>
                         <ul className="sub-list">
-                            <li><a href="">Upcoming Events</a></li>
-                            <li><a href="">Calendar</a></li>
+                            <li><Link to="/">Upcoming Events</Link></li>
+                            <li><Link to="/">Calendar</Link></li>
                         </ul>
                     </div>
                     <div className="col-md">
                         <p className="footer-head"><b>SERMONS</b></p>
                         <ul className="sub-list">
-                            <li><a href="">English</a></li>
-                            <li><a href="">Mandarin</a></li>
-                            <li><a href="">Cantonese/English</a></li>
+                            <li><Link to="/">English</Link></li>
+                            <li><Link to="/">Mandarin</Link></li>
+                            <li><Link to="/">Cantonese/English</Link></li>
                         </ul>
                     </div>
                     </div>
@@ -57,9 +57,9 @@ class FooterNav extends React.Component{
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-md">
-                    <a href="home.html">
+                    <Link to="/">
 	    	             <img id="banner-logo" src={withPrefix("/img/logo_blue.png")}></img>
-                	</a>
+                	</Link>
                         <p id="copyright-cbcoc" className="py-4">Copyright © 2018 Chinese Baptist Church of Orange County. All rights reserved.</p>
                     </div>
                     <div className="col-md pull-right px-4">

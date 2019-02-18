@@ -1,9 +1,12 @@
+import React from "react"
+import {withPrefix, Link} from "gatsby"
+
 class Service_Home extends React.Component {
 
   render() {
     
     return (
-      <div>
+      <div id="services-container">
           <div id="service-title" className="container-fluid">
             <h3 className="darkblue-tag text-center">Sunday Service Times</h3>
           </div>
@@ -28,7 +31,8 @@ class Service_Home extends React.Component {
   }
 }
 
-ReactDOM.render(
-  <Service_Home/>,
-  document.getElementById('services-container')
-);
+export default Service_Home;
+// ReactDOM.render(
+//   <Service_Home/>,
+//   document.getElementById('services-container')
+// );
