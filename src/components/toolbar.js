@@ -16,7 +16,7 @@ class Toolbar extends React.Component {
 
         <div className="col-sm">
           <div className="toolbar-links">
-            <Link to="/about">ABOUT</Link>
+            <Link to="/leadership">ABOUT</Link>
             <Link to="/ministries">MINISTRIES</Link>
             <Link to="/events">EVENTS</Link>
             <Link to="/sermons">SERMONS</Link>
