@@ -1,0 +1,214 @@
+/* Include font css */
+@import url("./fonts/fonts.css");
+
+:root{
+    --darkblue:#051C34;
+    --lightblue:#55D4FF;
+    --lightgray:rgb(178, 179, 179);
+    --eggshell:#F2F4F4;
+}
+/* Font styles class names*/
+.fa-solid{
+    font-family: "font-solid"
+}
+.fa-regular{
+    font-family: "font-regular"
+}
+.fa-brands{
+    font-family: "font-brands"
+}
+
+/* Toolbar Style */
+#toolbar-container {
+    width:100%;
+}
+
+#banner-logo{    
+    padding-top:44px;
+    padding-left:66px;
+
+    width:378.69px;
+}
+.toolbar-links {
+    display: flex;
+    justify-content: space-between;
+
+    /*padding: 44px, 66px, 0px, 0px;*/
+    padding-top:44px;
+    padding-right:66px;
+}
+.toolbar-links > a {
+    font-size: 20px;
+    color:white;
+}
+
+/* Footer Style */
+#footer-container{
+    padding-top: 50px;
+    width:100%;
+    background-color: var(--darkblue);
+}
+.sub-list{
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+.sub-list > li > a{
+    font-size:15px;
+    color:white;
+
+}
+#footer-nav{
+    margin: auto;
+    width:87%;
+    padding-bottom: 50px;
+}
+.footer-head{
+    color:var(--lightblue);
+}
+
+#contact-info {
+    font-size:15px;
+    color:white;
+}
+#social-icons{
+    padding-top:16px;;
+}
+#social-icons >li{
+    display:inline;
+}
+#social-icons-b {
+    justify-content: space-between;
+    font-family: 'font-brands';
+    font-size:250%;
+    padding-right:5%;
+    text-decoration: none;
+    color:var(--lightblue);
+}
+#social-icons-r {
+    justify-content: space-between;
+    font-family: 'font-regular';
+    font-size:250%;
+    padding-right:5%;
+    text-decoration: none;
+    color:var(--lightblue);
+}
+#copyright-cbcoc{
+    padding-left: 15%;
+    font-size:8px;
+    color:var(--lightblue);
+}
+/* Jumbotron */
+
+#jumbo-image {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.jumbo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 90vh;
+    width: 100%;
+}
+
+.jumbo > h2 {
+    font-weight: 700;
+    font-size: 500%;
+    color: white;
+    text-align: center;
+    padding-top: -5vh;
+}
+
+.jumbo > h3 {
+    font-weight: 400;
+    font-size: 300%;
+    color: white;
+    text-align: center;
+    padding-top: 5vh;
+}
+
+.jumbo > .jumbo-buffer {
+    height: 10vh;  /* TODO : solution without buffer */
+}
+
+/* Services Style */
+.lightblue-tag{
+    color:var(--lightblue);
+}
+.darkblue-tag{
+    color:var(--darkblue);
+}
+#services-container{
+    background-color: #F2F4F4;
+}
+#service-title{
+    padding-top: 125px;
+    padding-bottom: 75px;
+}
+#service-info{
+    padding-bottom: 150px;
+    width:85%;
+    margin: auto;
+}
+#service-center{
+    border-left: 2px solid  var(--lightgray);
+    border-right: 2px solid  var(--lightgray);
+}
+
+/* Upcoming Event Style */
+#event-section{
+    height:80vh;
+    width: 100%;
+    position:relative;
+}
+#event-image{
+    width:100%;
+    height:100%;
+    top: 0;
+    right: 0;
+    position: relative;
+    z-index: -1;
+
+}
+#upcoming-info{
+    padding-left:10%;
+    padding-bottom: 50px;
+    padding-top:50px;
+    width:50%;
+    /* margin-top: -25%; */
+    top:35%;
+    left:50%;
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+
+}
+/* Latest Sermon style */
+#latest-button{
+    background-color: var(--lightblue);
+    color:var(--darkblue);
+}
+#bible-img{
+    width:100%;
+    height:60vh;
+}
+#latest-info{
+    padding-left: 10%;
+    padding-top:50px;
+    background-color: white;
+}
+
+/* Unused */
+
+.anchor-labels{
+    color:var(--darkblue);
+    font-size: 150%;
+}

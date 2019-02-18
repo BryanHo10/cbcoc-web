@@ -1,0 +1,31 @@
+
+
+
+/* Link back to general events page */
+#attach-icon{
+    display:inline;
+}
+#column-info{
+    padding-left:7%;
+}
+#backtrack-events{
+    text-decoration: none;
+    color: var(--darkblue);
+}
+#backtrack-events:hover{
+    text-decoration: none;
+    color: var(--darkblue);
+}
+#backtrack-events{
+    text-decoration: none;
+    color: var(--darkblue);
+}
+
+/* Event Preview */
+.event-img-card{
+    width:50%;
+    height:auto;
+}
+#short-desc{
+    width:70%;
+}
