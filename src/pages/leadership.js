@@ -89,9 +89,11 @@ function handleLeaderInfo(){
   }
 
   export default () => (
-    <div style={{ color: `teal` }}>
+    <div>
       {/* <p>Such wow. Very React.</p> */}
-      <Toolbar/>
+      <Toolbar
+        isSolid={true}
+      />
       <div id="leader-info" className="row">
 
         {/* Pushing each item in the list of leaders || staff: Person object */}

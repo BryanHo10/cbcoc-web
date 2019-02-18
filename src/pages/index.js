@@ -7,10 +7,13 @@ import Event_Home from "../components/home/event-home"
 import Service_Home from "../components/home/service-home"
 import Sermon_Home from "../components/home/sermon-home"
 
+
 export default () => (
-  <div style={{ color: `teal` }}>
+  <div>
     {/* <p>Such wow. Very React.</p> */}
-    <Toolbar/>
+    <Toolbar
+      isSolid={false}
+    />
     <Jumbotron
         desc="Come for a visit this Sunday!"
         image="church.png"

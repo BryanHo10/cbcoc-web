@@ -1,16 +1,33 @@
 import React from "react"
 import {withPrefix, Link} from "gatsby"
 
+// PROPS: isSolid(true/false)
+//  isSolid
+//      > true:   img(logo_blue.png)  | bg-color(--darkblue)
+//      > false:  img(logo_white.png) | bg-color(none)
+
+
 class Toolbar extends React.Component {
   // Could make this dynamic but probably not worth
+
   render() {
+    let logo="logo_white.png";
+    let bg_color={};
+
+    if(this.props.isSolid){
+      logo="logo_blue.png";
+      bg_color = {
+        backgroundColor: '#051C34',
+      };
+    }
+
     return (
-      <div id="toolbar-container">
+      <div id="toolbar-container" style={bg_color}>
         <div className="container-fluid">
         <div className="row">
         <div className="col-sm">
           <Link to="/">
-            <img id="banner-logo" src={withPrefix("img/logo_white.png")}></img>
+            <img id="banner-logo" src={withPrefix("img/"+logo)}></img>
           </Link>
         </div>
 

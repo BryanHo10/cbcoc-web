@@ -206,9 +206,30 @@
     background-color: white;
 }
 
+/* 404 Error Page */
+#error-container{
+    background-color: var(--darkblue);
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+#error-text{
+    font-size: 1000%;
+    color:var(--lightblue);
+}
+#error-subtext{
+    font-size: 150%;
+    color:white;
+}
+
 /* Unused */
 
 .anchor-labels{
     color:var(--darkblue);
     font-size: 150%;
+}
+
+.fill-page{
+    height:100vh;
+    background-color: var(--darkblue);
 }
