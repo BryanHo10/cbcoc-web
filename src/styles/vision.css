@@ -1,0 +1,17 @@
+/* Include font css */
+@import url("./fonts/fonts.css");
+
+:root{
+    --darkblue:#051C34;
+    --lightblue:#55D4FF;
+    --lightgray:rgb(178, 179, 179);
+    --eggshell:#F2F4F4;
+}
+#vision-state{
+    padding-left: 30%;
+    padding-right: 15%;
+    padding-bottom: 5%
+}
+#verse-container{
+    background-color: var(--eggshell);
+}

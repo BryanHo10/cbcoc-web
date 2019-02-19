@@ -3,7 +3,8 @@ import Toolbar from "../components/toolbar"
 import FooterNav from "../components/footerNav"
 import Leader_Card from "../components/leadership/bio-modal"
 
-
+// Fix leadership bio popup
+//  -import bootstrap.js
 
 let staffList = handleLeaderInfo();
 

@@ -8,3 +8,6 @@
 
 /* Include General styling */
 @import url("./style.css");
+
+/* Include Vision Page styling */
+@import url("./vision.css");

@@ -2,6 +2,8 @@ import React from "react"
 import Toolbar from "../components/toolbar";
 import FooterNav from "../components/footerNav";
 import Jumbotron from "../components/jumbotron";
+import Verse_Container from "../components/vision/verse";
+import Vision_Container from "../components/vision/vision-container";
 
 export default ()=> (
     <div>
@@ -14,7 +16,9 @@ export default ()=> (
             title="Vision" 
             title2="" 
         />
+        <Vision_Container/>
 
+        <Verse_Container/>
 
         <FooterNav/>
 
