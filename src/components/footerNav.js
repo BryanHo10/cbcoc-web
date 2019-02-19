@@ -20,32 +20,32 @@ class FooterNav extends React.Component{
                     <div className="col-md">
                         <p className="footer-head"><b>ABOUT</b></p>
                         <ul className="sub-list">
-                            <li><Link to="/">Vision</Link></li>
-                            <li><Link to="/">Statement of Faith</Link></li>
-                            <li><Link to="/">Leadership</Link></li>
+                            <li><Link to="/vision">Vision</Link></li>
+                            <li><Link to="/statement">Statement of Faith</Link></li>
+                            <li><Link to="/leadership">Leadership</Link></li>
                         </ul>
 
                     </div>
                     <div className="col-md">
                         <p className="footer-head"><b>MINISTRIES</b></p>
                         <ul className="sub-list">
-                            <li><Link to="/">Fellowship Groups</Link></li>
-                            <li><Link to="/">Mission Trips</Link></li>
+                            <li><Link to="/fellowship">Fellowship Groups</Link></li>
+                            <li><Link to="/mission">Mission Trips</Link></li>
                         </ul>
                     </div>
                     <div className="col-md">
                         <p className="footer-head"><b>EVENTS</b></p>
                         <ul className="sub-list">
-                            <li><Link to="/">Upcoming Events</Link></li>
-                            <li><Link to="/">Calendar</Link></li>
+                            <li><Link to="/upcoming">Upcoming Events</Link></li>
+                            <li><Link to="/calendar">Calendar</Link></li>
                         </ul>
                     </div>
                     <div className="col-md">
                         <p className="footer-head"><b>SERMONS</b></p>
                         <ul className="sub-list">
-                            <li><Link to="/">English</Link></li>
-                            <li><Link to="/">Mandarin</Link></li>
-                            <li><Link to="/">Cantonese/English</Link></li>
+                            <li><Link to="/eng-sermon">English</Link></li>
+                            <li><Link to="/mand-sermon">Mandarin</Link></li>
+                            <li><Link to="/cant-sermon">Cantonese/English</Link></li>
                         </ul>
                     </div>
                     </div>

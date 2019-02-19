@@ -8,9 +8,10 @@ import {withPrefix, Link} from "gatsby"
 
 
 class Toolbar extends React.Component {
-  // Could make this dynamic but probably not worth
 
   render() {
+
+    //Sets the toolbar style based on props (isSolid)
     let logo="logo_white.png";
     let bg_color={};
 
@@ -33,7 +34,7 @@ class Toolbar extends React.Component {
 
         <div className="col-sm">
           <div className="toolbar-links">
-            <Link to="/leadership">ABOUT</Link>
+            <Link to="/about">ABOUT</Link>
             <Link to="/ministries">MINISTRIES</Link>
             <Link to="/events">EVENTS</Link>
             <Link to="/sermons">SERMONS</Link>
@@ -49,7 +50,3 @@ class Toolbar extends React.Component {
 }
 
 export default Toolbar;
-// ReactDOM.render(
-//   <Toolbar/>,
-//   document.getElementById('toolbar-container')
-// );
