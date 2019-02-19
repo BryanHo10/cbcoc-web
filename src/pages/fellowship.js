@@ -17,7 +17,7 @@ export default () => (
         title="Fellowship Groups" 
         title2="" 
     />
-    <div className="row">
+    <div className="row container-fluid">
       {
         groupNames.map((fellowship) => {
             return(

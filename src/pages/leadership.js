@@ -95,7 +95,10 @@ function handleLeaderInfo(){
       <Toolbar
         isSolid={true}
       />
-      <div id="leader-info" className="row">
+
+      <h1 id="leader-title" className="py-3">Leadership</h1>
+
+      <div id="leader-info" className="row container-fluid">
 
         {/* Pushing each item in the list of leaders || staff: Person object */}
         {staffList.map((staff)=>{

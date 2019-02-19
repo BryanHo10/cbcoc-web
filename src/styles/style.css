@@ -24,10 +24,11 @@
 }
 
 #banner-logo{    
-    padding-top:44px;
-    padding-left:66px;
+    margin-top:22px;
+    margin-left:66px;
+    margin-bottom:15px;
 
-    width:378.69px;
+    width:300px;
 }
 .toolbar-links {
     display: flex;
