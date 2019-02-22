@@ -1,3 +1,9 @@
+To deploy : `npm run develop`
+
+To build : `npm run build`
+
+`python -m http.server`
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">

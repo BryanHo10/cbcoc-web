@@ -20,7 +20,7 @@ class Leader_Card extends React.Component {
         <div className="col-md-4">
                 {/* <!-- Trigger the modal with a clickable card of leader's picture and name --> */}
                 <div className="container text-center border" data-toggle="modal" data-target={"#"+this.props.id}>
-                    <img className="leader-img-card" src={withPrefix("img/leadership/" + this.props.id+".jpg")}/>
+                    <img className="leader-img-card" src={withPrefix("img/leadership/" + this.props.id+".jpg")} alt=""/>
                     <h3>{this.props.name}</h3>
                     <p>{this.props.title}</p>
                 </div>
