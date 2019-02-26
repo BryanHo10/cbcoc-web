@@ -19,7 +19,7 @@ export default ()=>(
         />
 
         <Event_Preview
-            name="Event Name"
+            name="Cheesey Party"
             date="December 8-9, 2018"
             loc="CBCOC"
             id="bible"

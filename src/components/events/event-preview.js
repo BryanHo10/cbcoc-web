@@ -19,7 +19,16 @@ class Event_Preview extends React.Component {
                     <h5>{this.props.name}</h5>
                     <p>{this.props.date}<br/>{this.props.loc}</p>
                     <p id="short-desc">{this.props.desc}</p>
-                    <Link id="backtrack-events" to={"/events_"}>
+                    <Link 
+                        id="backtrack-events" 
+                        to={"/show-event"}
+                        state={{
+                            eventName:this.props.name,
+                            eventDesc:this.props.desc,
+                            eventLoc:this.props.loc,
+                            eventDate:this.props.date                            
+                            }}
+                    >
                             <h6 id="attach-icon">View Event Details  </h6>
                             <h6 className="fa-solid" id="attach-icon"></h6>
                     </Link>

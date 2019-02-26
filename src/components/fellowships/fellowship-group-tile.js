@@ -1,7 +1,8 @@
 import React from "react"
 import {withPrefix, Link} from "gatsby"
 
-// PROPS: name | id
+//  PROPS: DATE | MEETING_TIME | LOCATION | DESC | CONTACT ARRAY(name,email) | id | audience
+
 
 //  id = lowercase with "_" and replacing whitespace and "/" (i.e. middle_high_school)
 
@@ -10,7 +11,21 @@ class Group_Tile extends React.Component{
         return(
             <div className="col-md-6 text-center">
                 <img id="group-img-card" src={withPrefix("img/"+this.props.id)+".jpg"}></img>
-                <h3>{this.props.name}</h3>
+                <Link to='/show-fellowship'
+                    state={{
+                        groupName:this.props.name,
+                        groupDesc:this.props.desc,
+                        groupLoc:this.props.loc,
+                        groupTime:this.props.times,
+                        groupMeet:this.props.meetings,
+                        groupContact:this.props.contact,
+                        groupDate:this.props.date,
+                        groupAudience:this.props.audience,
+                        groupAbbrev:this.props.abbrev                           
+                        }}                
+                >
+                    <h3>{this.props.target_aud}</h3>
+                </Link>
             </div>
         );
     }

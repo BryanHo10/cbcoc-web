@@ -29,7 +29,7 @@ class FooterNav extends React.Component{
                     <div className="col-md">
                         <p className="footer-head"><b>MINISTRIES</b></p>
                         <ul className="sub-list">
-                            <li><Link to="/fellowship">Fellowship Groups</Link></li>
+                            <li><Link to="/fellowships">Fellowship Groups</Link></li>
                             <li><Link to="/mission">Mission Trips</Link></li>
                         </ul>
                     </div>
