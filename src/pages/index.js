@@ -7,7 +7,6 @@ export default () => (
   <div style={{ color: `teal` }}>
     {/* <p>Such wow. Very React.</p> */}
     <Toolbar/>
-    
     <Jumbotron
         desc="Come for a visit this Sunday!"
         image="church.png"
