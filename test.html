@@ -1,0 +1,209 @@
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- Moment.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+<style>.table>tbody>tr>th { padding-top: 2em; } .link-title { font-size: 0.8em; opacity: 0.6; }</style>
+</head>
+
+<body>
+<div class="container" role="main">
+
+<ul class="nav nav-pills">
+</ul>
+
+<div id="summary">&nbsp;</div>
+</div>
+</body>
+
+<script>
+
+function rebuildTable(tableData) {
+
+
+	var addTable = function(parentTable){
+
+		var table = document.createElement('table');
+		if(parentTable){
+			parentTable.appendChild(table);	
+		}
+
+		table.className = 'table';
+		summary.appendChild(table);
+
+		var tableBody = document.createElement('tbody');
+
+		table.appendChild(tableBody);
+		table = tableBody;
+
+		return table;
+	}
+	// var testing = JSON.parse(txt);
+
+	// console.log(testing);
+
+	// var tableJSON = JSON.parse(tableData);
+
+	//Always 1 length - 1 cell
+	var addRow = function(table, rowData){
+		var row = document.createElement('tr');
+		var cell = document.createElement('td');
+		cell.innerHTML = rowData;
+		row.appendChild(cell);
+
+		table.appendChild(row);
+	}
+
+	var getRowData = function(table, current) {
+
+
+		var display = current['display'];
+		var url = current['url'];
+
+		var rowData = '<div class="link-location"><Link to=/"' + url + '">' + display + '</Link></div>';
+		addRow(table, rowData);
+
+		var children = current['children'];
+
+		if(children){
+
+			var childTable = addTable(table);
+			// TODO : fix this -- parents need to encapsulate children
+			// addRow(table, childTable);
+
+
+
+			// table.appendChild(childTable);
+
+			children.map( 
+				function(x) {
+					getRowData(childTable, x);
+				});
+		}
+	}
+
+	var testing = function(){
+		return true;
+	}
+
+	var mainTable = addTable(null);
+
+	getRowData(mainTable, tableData);
+
+};
+
+var x = {"display" : "Home",
+		"url" : "home",
+
+		"children" : [
+				{"display" : "Calendar",
+				"url" : "calendar"},
+
+				{"display" : "Statement Of Faith",
+				"url" : "statement-of-faith"},
+
+				{"display" : "Vision",
+				"url" : "vision"},
+
+				{"display" : "Staff",
+				"url" : "staff",
+				"children" : [
+					{"display" : "Tony Leung",
+					"url" : "staff-tony-leung"},
+
+					{"display" : "Ryan Cheung",
+					"url" : "staff-ryan-cheung"},
+
+					{"display" : "Eugene Kim",
+					"url" : "staff-eugene-kim"}
+					]},
+
+				{"display" : "Visit",
+				"url" : "visit",
+				"children" : [
+					{"display" : "English Sermons",
+					"url" : "sermons-english"},
+
+					{"display" : "Mandarin Sermons",
+					"url" : "sermons-mandarin"},
+
+					{"display" : "Bilingual Sermons",
+					"url" : "sermons-bilingual"}
+					]},
+
+				{"display" : "Mission Trips",
+				"url" : "missions",
+				"children" : [
+					{"display" : "Tijuana",
+					"url" : "missions-tijuana"},
+
+					{"display" : "Pala",
+					"url" : "missions-pala"},
+
+					{"display" : "Many Farms",
+					"url" : "missions-many-farms"},
+
+					{"display" : "Honduras",
+					"url" : "missions-honduras"},
+
+					{"display" : "Belize",
+					"url" : "missions-belize"},
+
+					{"display" : "East Asia",
+					"url" : "missions-east-asia"}
+					]},
+
+				{"display" : "Fellowship Groups",
+				"url" : "fellowship-groups",
+				"children" : [
+					{"display" : "CYF",
+					"url" : "fellowship-cyf"},
+
+					{"display" : "CT",
+					"url" : "fellowship-ct"},
+
+					{"display" : "CLAY",
+					"url" : "fellowship-clay"},
+
+					{"display" : "CYF",
+					"url" : "fellowship-cyf"},
+
+					{"display" : "CYF",
+					"url" : "fellowship-cyf"},
+
+					{"display" : "CYF",
+					"url" : "fellowship-cyf"},
+
+					{"display" : "CYF",
+					"url" : "fellowship-cyf"},
+
+					{"display" : "CYF",
+					"url" : "fellowship-cyf"}
+					]},
+
+				{"display" : "Upcoming Events",
+				"url" : "events-upcoming",
+				"children" : [
+					{"display": "Event-X",
+					"url" : "event-x"},
+
+					{"display" : "Past Events",
+					"url" : "events-past"}
+					]}
+			]};
+
+
+rebuildTable(x);
+
+</script>
+
+</html>

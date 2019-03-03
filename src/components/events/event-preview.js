@@ -21,7 +21,7 @@ class Event_Preview extends React.Component {
                     <p id="short-desc">{this.props.desc}</p>
                     <Link 
                         id="backtrack-events" 
-                        to={"/show-event"}
+                        to={"/event-show"}
                         state={{
                             eventName:this.props.name,
                             eventDesc:this.props.desc,

@@ -11,7 +11,7 @@ class Group_Tile extends React.Component{
         return(
             <div className="col-md-6 text-center">
                 <img id="group-img-card" src={withPrefix("img/"+this.props.id)+".jpg"}></img>
-                <Link to='/show-fellowship'
+                <Link to='/fellowship-show'
                     state={{
                         groupName:this.props.name,
                         groupDesc:this.props.desc,

@@ -28,7 +28,7 @@ class Toolbar extends React.Component {
         <div className="row">
         <div className="col-sm">
           <Link to="/">
-            <img id="banner-logo" src={withPrefix("img/"+logo)}></img>
+            <img id="banner-logo" alt="" src={withPrefix("img/"+logo)}></img>
           </Link>
         </div>
 
@@ -36,7 +36,7 @@ class Toolbar extends React.Component {
           <div className="toolbar-links">
             <Link to="/about">ABOUT</Link>
             <Link to="/ministries">MINISTRIES</Link>
-            <Link to="/events">EVENTS</Link>
+            <Link to="/events-upcoming">EVENTS</Link>
             <Link to="/sermons">SERMONS</Link>
             <Link to="/visit">VISIT</Link>
           </div>
