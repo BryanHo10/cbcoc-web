@@ -15,7 +15,7 @@ class Jumbotron extends React.Component {
     return (
       <div id="jumbo-container">
       <div className="jumbo">
-        <img id="jumbo-image" src={withPrefix("img/" + this.props.image)} />
+        <img id="jumbo-image" alt="" src={withPrefix("img/" + this.props.image)} />
         
         <h2>{this.props.title}</h2>
         <h2>{this.props.title2}</h2>

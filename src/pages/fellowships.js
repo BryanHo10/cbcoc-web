@@ -2,11 +2,11 @@ import React from "react"
 import Toolbar from "../components/toolbar"
 import FooterNav from "../components/footerNav"
 import Jumbotron from "../components/jumbotron"
-import Group_Tile from "../components/fellowships/fellowship-group-tile";
+import GroupTile from "../components/fellowships/fellowship-group-tile";
 
 import fellowshipData from "../data/fellowship.json"
 
-let groupNames=["Children","Middle/High School","College","English Young Adult","Young Families","English Adult","Cantonese Adult","Mandarin Young Adult","Mandarin Adult"];
+//let groupNames=["Children","Middle/High School","College","English Young Adult","Young Families","English Adult","Cantonese Adult","Mandarin Young Adult","Mandarin Adult"];
 
 //tried doing withPrefix from static but failed
 let fellowshipJSON=fellowshipData.fellowships;
@@ -27,7 +27,7 @@ export default () => (
       {
         fellowshipJSON.map((fellowship) => {
             return(
-                <Group_Tile
+                <GroupTile
                   target_aud={fellowship.target_aud}
                   id={fellowship.target_aud.toLowerCase().replace(/ |\//g,"_")}
                   name={fellowship.name}

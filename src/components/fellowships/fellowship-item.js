@@ -1,6 +1,6 @@
 //  PROPS: DATE | TIME | LOCATION | DESC | CONTACT ARRAY(name,email)
 import React from "react"
-import {withPrefix,Link} from "gatsby"
+import {Link} from "gatsby"
 class Fellowship_Item extends React.Component {
 
 

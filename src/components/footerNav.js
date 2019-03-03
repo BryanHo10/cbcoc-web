@@ -58,16 +58,16 @@ class FooterNav extends React.Component{
                 <div className="row">
                     <div className="col-md">
                     <Link to="/">
-	    	             <img id="banner-logo" src={withPrefix("/img/logo_blue.png")}></img>
+	    	             <img id="banner-logo" alt="" src={withPrefix("/img/logo_blue.png")}></img>
                 	</Link>
                         <p id="copyright-cbcoc" className="py-4">Copyright © 2018 Chinese Baptist Church of Orange County. All rights reserved.</p>
                     </div>
                     <div className="col-md pull-right px-4">
                         <ul id="social-icons" className="text-right">
-                            <li className="px-2"><a id="social-icons-b" href=""></a></li>
-                            <li className="px-2"><a id="social-icons-b" href=""></a></li>
-                            <li className="px-2"><a id="social-icons-b" href=""></a></li>
-                            <li className="px-2"><a id="social-icons-r" href=""></a></li>
+                            <li className="px-2"><a id="social-icons-b" href="1"></a></li>
+                            <li className="px-2"><a id="social-icons-b" href="2"></a></li>
+                            <li className="px-2"><a id="social-icons-b" href="3"></a></li>
+                            <li className="px-2"><a id="social-icons-r" href="4"></a></li>
                         </ul>
 
                     </div>

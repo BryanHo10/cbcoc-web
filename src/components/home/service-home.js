@@ -1,5 +1,4 @@
 import React from "react"
-import {withPrefix, Link} from "gatsby"
 
 class Service_Home extends React.Component {
 

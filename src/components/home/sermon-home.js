@@ -17,7 +17,7 @@ class Sermon_Home extends React.Component {
               <Link to="/sermons" id="latest-button" className="btn border">Listen Now</Link>
             </div>
             <div className="col-sm border">
-            <img id="bible-img" src={withPrefix("img/bible.png")} ></img>
+            <img id="bible-img" alt="" src={withPrefix("img/bible.png")} ></img>
             </div>
           </div>
         </div>

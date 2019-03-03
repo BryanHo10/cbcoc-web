@@ -1,14 +1,14 @@
 import React from "react"
 import {withPrefix, Link} from "gatsby"
 
-class Event_Home extends React.Component {
+class EventHome extends React.Component {
 
     render() {
       
       return (
         <div id="upcoming-container">
         <div id="event-section">
-            <img id="event-image" src={withPrefix("img/" + this.props.image)}></img>
+            <img id="event-image" alt="" src={withPrefix("img/" + this.props.image)}></img>
 
             <div id = "upcoming-info" className="container border">
               <h3 className="darkblue-tag in-front">{this.props.title}</h3>
@@ -24,7 +24,7 @@ class Event_Home extends React.Component {
       );
     }
   }
-  export default Event_Home;
+  export default EventHome;
   // ReactDOM.render(
   //   <Event_Home
   //     image="event-test.png"

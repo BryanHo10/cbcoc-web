@@ -2,7 +2,7 @@ import React from "react"
 import Toolbar from "../components/toolbar"
 import FooterNav from "../components/footerNav"
 import Jumbotron from "../components/jumbotron"
-import Fellowship_Item from "../components/fellowships/fellowship-item"
+import FellowshipItem from "../components/fellowships/fellowship-item"
 
 export default ({location})=>(
     // location is holds props that are passed from previous link
@@ -19,7 +19,7 @@ export default ({location})=>(
             title={location.state.groupName} 
             title2=""
         />
-        <Fellowship_Item
+        <FellowshipItem
             date={location.state.groupMeet}
             time={location.state.groupTimes}
             loc={location.state.groupLoc}
