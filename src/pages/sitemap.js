@@ -226,45 +226,49 @@ export default () => (
 			<tr><td>
 				MINISTRIES
 
-				<tr><td>
-					<Link to="/fellowships">FELLOWSHIP GROUPS *</Link>
-						<table border="1">
-							<tr><td><Link to="/fellowship-cyf">CYF</Link></td></tr>
-							<tr><td><Link to="/fellowship-ct">CT</Link></td></tr>
-							<tr><td><Link to="/fellowship-clay">CLAY</Link></td></tr>
-							<tr><td><Link to="/fellowship-yff">YFF</Link></td></tr>
-							<tr><td><Link to="/fellowship-foj">FOJ</Link></td></tr>
-							<tr><td><Link to="/fellowship-eaf">EAF</Link></td></tr>
-							<tr><td><Link to="/fellowship-zion">ZION</Link></td></tr>
-							<tr><td><Link to="/fellowship-mandarin">MANDARIN FELLOWSHIP</Link></td></tr>
-						</table>
-				</td></tr>
+				<table border="1">
+					<tr><td>
+						<Link to="/fellowships">FELLOWSHIP GROUPS *</Link>
+							<table border="1">
+								<tr><td><Link to="/fellowship-cyf">CYF</Link></td></tr>
+								<tr><td><Link to="/fellowship-ct">CT</Link></td></tr>
+								<tr><td><Link to="/fellowship-clay">CLAY</Link></td></tr>
+								<tr><td><Link to="/fellowship-yff">YFF</Link></td></tr>
+								<tr><td><Link to="/fellowship-foj">FOJ</Link></td></tr>
+								<tr><td><Link to="/fellowship-eaf">EAF</Link></td></tr>
+								<tr><td><Link to="/fellowship-zion">ZION</Link></td></tr>
+								<tr><td><Link to="/fellowship-mandarin">MANDARIN FELLOWSHIP</Link></td></tr>
+							</table>
+					</td></tr>
 
 
 
-				<tr><td>
-					<Link to="/missions">MISSION TRIPS</Link>
-						<table border="1"><tr><td><Link to="/missions-tijuana">TIJUANA</Link></td></tr>
-							<tr><td><Link to="/missions-pala">PALA</Link></td></tr>
-							<tr><td><Link to="/missions-many-farms">MANY FARMS</Link></td></tr>
-							<tr><td><Link to="/missions-honduras">HONDURAS</Link></td></tr>
-							<tr><td><Link to="/missions-belize">BELIZE</Link></td></tr>
-							<tr><td><Link to="/missions-east-asia">EAST ASIA</Link></td></tr>
-						</table>
-				</td></tr>
+					<tr><td>
+						<Link to="/missions">MISSION TRIPS</Link>
+							<table border="1"><tr><td><Link to="/missions-tijuana">TIJUANA</Link></td></tr>
+								<tr><td><Link to="/missions-pala">PALA</Link></td></tr>
+								<tr><td><Link to="/missions-many-farms">MANY FARMS</Link></td></tr>
+								<tr><td><Link to="/missions-honduras">HONDURAS</Link></td></tr>
+								<tr><td><Link to="/missions-belize">BELIZE</Link></td></tr>
+								<tr><td><Link to="/missions-east-asia">EAST ASIA</Link></td></tr>
+							</table>
+					</td></tr>
+				</table>
 			</td></tr>
 
 			<tr><td>
 				EVENTS
 
-				<tr><td>
-					<Link to="/events-upcoming">UPCOMING EVENTS *</Link>
-						<table border="1">
-							<tr><td><Link to="/event-x">EVENT X</Link></td></tr>
-							<tr><td><Link to="/events-past">PAST EVENTS</Link></td></tr>
-						</table>
-				</td></tr>
-				<tr><td><Link to="/calendar">CALENDAR</Link></td></tr>
+				<table border="1">
+					<tr><td>
+						<Link to="/events-upcoming">UPCOMING EVENTS *</Link>
+							<table border="1">
+								<tr><td><Link to="/event-x">EVENT X</Link></td></tr>
+								<tr><td><Link to="/events-past">PAST EVENTS</Link></td></tr>
+							</table>
+					</td></tr>
+					<tr><td><Link to="/calendar">CALENDAR</Link></td></tr>
+				</table>
 			</td></tr>
 
 			<tr><td>
