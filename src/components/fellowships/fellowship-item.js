@@ -1,7 +1,7 @@
 //  PROPS: DATE | TIME | LOCATION | DESC | CONTACT ARRAY(name,email)
 import React from "react"
 import {Link} from "gatsby"
-class Fellowship_Item extends React.Component {
+class FellowshipItem extends React.Component {
 
 
     
@@ -54,9 +54,9 @@ class Fellowship_Item extends React.Component {
     }
   }
 
-export default Fellowship_Item;
+export default FellowshipItem;
 //   ReactDOM.render(
-//     <Fellowship_Item
+//     <FellowshipItem
 //         date="Every Friday"
 //         time="7:30 PM"
 //         loc="CBCOC"

@@ -2,7 +2,7 @@ import React from "react"
 import Toolbar from "../components/toolbar"
 import FooterNav from "../components/footerNav"
 import Jumbotron from "../components/jumbotron"
-import Baptist_Faith_Message from "../components/statement/baptist"
+import BaptistFaithMessage from "../components/statement/baptist"
 import {withPrefix} from "gatsby"
 
 
@@ -18,7 +18,7 @@ export default () => (
         title="Statement of Faith" 
         title2="" 
     />
-    <Baptist_Faith_Message/>
+    <BaptistFaithMessage/>
     <FooterNav/>
   </div>
 )

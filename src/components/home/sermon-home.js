@@ -1,7 +1,7 @@
 import React from "react"
 import {withPrefix, Link} from "gatsby"
 
-class Sermon_Home extends React.Component {
+class SermonHome extends React.Component {
 
     render() {
       
@@ -25,7 +25,7 @@ class Sermon_Home extends React.Component {
     }
   }
   
-  export default Sermon_Home;
+  export default SermonHome;
   // ReactDOM.render(
   //   <Sermon_Home
   //     title="Latest Sermon"

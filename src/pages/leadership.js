@@ -1,7 +1,7 @@
 import React from "react"
 import Toolbar from "../components/toolbar"
 import FooterNav from "../components/footerNav"
-import Leader_Card from "../components/leadership/bio-modal"
+import LeaderCard from "../components/leadership/bio-modal"
 
 // Fix leadership bio popup
 //  -import bootstrap.js
@@ -103,7 +103,7 @@ function handleLeaderInfo(){
         {/* Pushing each item in the list of leaders || staff: Person object */}
         {staffList.map((staff)=>{
             return (
-                <Leader_Card
+                <LeaderCard
                     name={staff.name}
                     title={staff.position}
                     id={staff.image_id}

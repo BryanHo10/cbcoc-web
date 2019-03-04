@@ -5,7 +5,7 @@ import {withPrefix, Link} from "gatsby"
 //Compiled of 3 previews per page
 
 // PROPS: NAME | DATE | LOC | DESC | img | id
-class Event_Preview extends React.Component {
+class EventPreview extends React.Component {
 
     render() {
       
@@ -41,4 +41,4 @@ class Event_Preview extends React.Component {
     }
   }
   
- export default Event_Preview;
+ export default EventPreview;

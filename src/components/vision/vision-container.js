@@ -1,6 +1,6 @@
 import React from "react"
 
-class Vision_Container extends React.Component {
+class VisionContainer extends React.Component {
     render(){
         return(
             <div id="vision-state">
@@ -21,4 +21,4 @@ class Vision_Container extends React.Component {
         );
     }
 }
-export default Vision_Container;
+export default VisionContainer;

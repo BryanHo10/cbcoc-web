@@ -1,6 +1,6 @@
 import React from "react"
 
-class Service_Home extends React.Component {
+class ServiceHome extends React.Component {
 
   render() {
     
@@ -30,7 +30,7 @@ class Service_Home extends React.Component {
   }
 }
 
-export default Service_Home;
+export default ServiceHome;
 // ReactDOM.render(
 //   <Service_Home/>,
 //   document.getElementById('services-container')

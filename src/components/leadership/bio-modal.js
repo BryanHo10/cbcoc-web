@@ -1,7 +1,7 @@
 import React from "react"
 import {withPrefix} from "gatsby"
 
-class Leader_Card extends React.Component {
+class LeaderCard extends React.Component {
 
     constructor() {
         super();
@@ -58,7 +58,7 @@ class Leader_Card extends React.Component {
 
   
 
-  export default Leader_Card;
+  export default LeaderCard;
 
 //   ReactDOM.render(
 //       <div id="leader-info" className="row">
@@ -66,7 +66,7 @@ class Leader_Card extends React.Component {
 //         {/* Pushing each item in the list of leaders || staff: Person object */}
 //         {staffList.map((staff)=>{
 //             return (
-//                 <Leader_Card
+//                 <LeaderCard
 //                     name={staff.name}
 //                     title={staff.position}
 //                     id={staff.image_id}

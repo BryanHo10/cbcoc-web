@@ -1,6 +1,6 @@
 import React from "react"
 
-class Verse_Container extends React.Component {
+class VerseContainer extends React.Component {
     render(){
         return(
             <div id="verse-container" className="container-fluid text-center py-5">
@@ -19,4 +19,4 @@ class Verse_Container extends React.Component {
         );
     }
 }
-export default Verse_Container;
+export default VerseContainer;

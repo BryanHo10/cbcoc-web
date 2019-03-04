@@ -1,7 +1,7 @@
 import React from "react"
 
 
-class Vision_Home extends React.Component {
+class VisionHome extends React.Component {
 
     render() {
       
@@ -16,7 +16,7 @@ class Vision_Home extends React.Component {
     }
   }
   
-  export default Vision_Home;
+  export default VisionHome;
   // ReactDOM.render(
   //   <Vision_Home/>,
   //   document.getElementById('vision-container')
