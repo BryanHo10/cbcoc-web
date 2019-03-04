@@ -2,14 +2,19 @@ import React from "react"
 import Toolbar from "../components/toolbar"
 import FooterNav from "../components/footerNav"
 import Jumbotron from "../components/jumbotron"
-import VisionHome from "../components/home/vision-home"
-import EventHome from "../components/home/event-home"
-import ServiceHome from "../components/home/service-home"
-import SermonHome from "../components/home/sermon-home"
+import Vision_Home from "../components/home/vision-home"
+import Event_Home from "../components/home/event-home"
+import Service_Home from "../components/home/service-home"
+import Sermon_Home from "../components/home/sermon-home"
+import {Helmet} from "react-helmet";
 
 
 export default () => (
   <div>
+    <Helmet>
+                <meta charSet="utf-8" />
+                <title>CBCOC | Home</title>
+    </Helmet>
     {/* <p>Such wow. Very React.</p> */}
     <Toolbar
       isSolid={false}
