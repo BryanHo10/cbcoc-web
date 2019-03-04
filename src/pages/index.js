@@ -6,10 +6,15 @@ import Vision_Home from "../components/home/vision-home"
 import Event_Home from "../components/home/event-home"
 import Service_Home from "../components/home/service-home"
 import Sermon_Home from "../components/home/sermon-home"
+import {Helmet} from "react-helmet";
 
 
 export default () => (
   <div>
+    <Helmet>
+                <meta charSet="utf-8" />
+                <title>CBCOC | Home</title>
+    </Helmet>
     {/* <p>Such wow. Very React.</p> */}
     <Toolbar
       isSolid={false}
