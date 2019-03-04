@@ -29,9 +29,12 @@ export default ({location})=>(
             id={1}
         />
 <<<<<<< HEAD:src/pages/event-show.js
+<<<<<<< HEAD:src/pages/event-show.js
         <EventNavigation/>
 =======
 >>>>>>> updated statement of faith page:src/pages/show-event.js
+=======
+>>>>>>> 5469894567dc9c1a2309291305e695cb7486a6e4:src/pages/show-event.js
         <FooterNav/>
 
     </div>
