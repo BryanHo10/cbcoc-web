@@ -3,7 +3,7 @@ import Toolbar from "../components/toolbar"
 import FooterNav from "../components/footerNav"
 import Jumbotron from "../components/jumbotron"
 import GroupTile from "../components/fellowships/fellowship-group-tile";
-
+import ReactHelmet from "../components/head"
 import fellowshipData from "../data/fellowship.json"
 
 //let groupNames=["Children","Middle/High School","College","English Young Adult","Young Families","English Adult","Cantonese Adult","Mandarin Young Adult","Mandarin Adult"];
@@ -11,9 +11,12 @@ import fellowshipData from "../data/fellowship.json"
 //tried doing withPrefix from static but failed
 let fellowshipJSON=fellowshipData.fellowships;
 
-export default () => (
+export default ({location}) => (
   <div>
     {/* <p>Such wow. Very React.</p> */}
+    <ReactHelmet
+      tabTitle={"Fellowships | CBCOC"}
+    />
     <Toolbar
       isSolid={false}
     />

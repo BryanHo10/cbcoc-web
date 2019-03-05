@@ -6,7 +6,7 @@ import {withPrefix, Link} from "gatsby"
 
 //  id = lowercase with "_" and replacing whitespace and "/" (i.e. middle_high_school)
 
-class Group_Tile extends React.Component{
+class GroupTile extends React.Component{
     render(){
         return(
             <div className="col-md-6 text-center">
@@ -31,4 +31,4 @@ class Group_Tile extends React.Component{
     }
 }
 
-export default Group_Tile;
+export default GroupTile;

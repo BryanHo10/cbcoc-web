@@ -4,6 +4,7 @@ import FooterNav from "../components/footerNav"
 import Jumbotron from "../components/jumbotron"
 import EventItem from "../components/events/event-item"
 import EventNavigation from "../components/events/event-nav"
+import ReactHelmet from "../components/head";
 
 
 export default ({location})=>(
@@ -11,6 +12,9 @@ export default ({location})=>(
     // 
     // Will crash if page is loaded initially without linking
     <div>
+        <ReactHelmet
+            tabTitle={location.state.eventName+" | CBCOC"}
+        />
         <Toolbar
             isSolid={false}
         />

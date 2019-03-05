@@ -6,15 +6,16 @@ import VisionHome from "../components/home/vision-home"
 import EventHome from "../components/home/event-home"
 import ServiceHome from "../components/home/service-home"
 import SermonHome from "../components/home/sermon-home"
-import {Helmet} from "react-helmet";
+import ReactHelmet from "../components/head"
 
 
-export default () => (
+export default ({location}) => (
+
   <div>
-    <Helmet>
-                <meta charSet="utf-8" />
-                <title>CBCOC | Home</title>
-    </Helmet>
+    {console.log(location)}
+    <ReactHelmet
+            tabTitle={"CBCOC"}
+    />
     {/* <p>Such wow. Very React.</p> */}
     <Toolbar
       isSolid={false}

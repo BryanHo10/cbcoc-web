@@ -3,12 +3,16 @@ import Toolbar from "../components/toolbar"
 import FooterNav from "../components/footerNav"
 import Jumbotron from "../components/jumbotron"
 import BaptistFaithMessage from "../components/statement/baptist"
+import ReactHelmet from "../components/head"
 import {withPrefix} from "gatsby"
 
 
-export default () => (
+export default ({location}) => (
   <div>
     {/* <p>Such wow. Very React.</p> */}
+    <ReactHelmet
+            tabTitle={"Statement of Faith | CBCOC"}
+    />
     <Toolbar
       isSolid={false}
     />

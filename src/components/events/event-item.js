@@ -3,7 +3,7 @@ import {Link} from "gatsby"
 
 //  PROPS: DATE | TIME | LOC | DESC | NAME | id
 
-class Event_Item extends React.Component {
+class EventItem extends React.Component {
 
     render() {
       console.log(this.props.location);
@@ -41,9 +41,9 @@ class Event_Item extends React.Component {
     }
   }
   
- export default Event_Item; 
+ export default EventItem; 
 //   ReactDOM.render(
-//     <Event_Item
+//     <EventItem
 //         date="December 31, 2018"
 //         time="1:00PM"
 //         loc="CBCOC"

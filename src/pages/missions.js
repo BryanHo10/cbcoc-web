@@ -3,7 +3,7 @@ import Toolbar from "../components/toolbar"
 import FooterNav from "../components/footerNav"
 import Jumbotron from "../components/jumbotron"
 import GroupTile from "../components/fellowships/fellowship-group-tile";
-
+import ReactHelmet from "../components/head"
 import fellowshipData from "../data/fellowship.json"
 
 
@@ -15,8 +15,11 @@ let fellowshipJSON=fellowshipData.fellowships;
 
 //JSON of text and img_name
 
-export default ()=>(
+export default ({location})=>(
 	<div>
+		<ReactHelmet
+            tabTitle={"Mission Trips | CBCOC"}
+        />
 		<Toolbar
 			isSolid={false}
 		/>

@@ -1,8 +1,12 @@
 import React from "react"
 import Toolbar from "../components/toolbar"
+import ReactHelment from "../components/head"
 
 export default () => (
     <div className="d-flex flex-column fill-page">
+    <ReactHelment
+        tabTitle="Error Page | CBCOC"
+    />
         <Toolbar
             isSolid={true}
         />

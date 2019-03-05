@@ -30,13 +30,13 @@ class FooterNav extends React.Component{
                         <p className="footer-head"><b>MINISTRIES</b></p>
                         <ul className="sub-list">
                             <li><Link to="/fellowships">Fellowship Groups</Link></li>
-                            <li><Link to="/mission">Mission Trips</Link></li>
+                            <li><Link to="/missions">Mission Trips</Link></li>
                         </ul>
                     </div>
                     <div className="col-md">
                         <p className="footer-head"><b>EVENTS</b></p>
                         <ul className="sub-list">
-                            <li><Link to="/upcoming">Upcoming Events</Link></li>
+                            <li><Link to="/events-upcoming">Upcoming Events</Link></li>
                             <li><Link to="/calendar">Calendar</Link></li>
                         </ul>
                     </div>

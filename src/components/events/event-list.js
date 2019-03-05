@@ -2,7 +2,7 @@
 //Will take information from json
 
 //Upon click, the user will be taken to the "event-item" view page
-class Event_List extends React.Component {
+class EventList extends React.Component {
 
     render() {
       
@@ -17,7 +17,7 @@ class Event_List extends React.Component {
   }
   
   ReactDOM.render(
-    <Event_List
+    <EventList
     />,
     document.getElementById('##')
   );

@@ -4,10 +4,14 @@ import FooterNav from "../components/footerNav"
 import Jumbotron from "../components/jumbotron"
 import EventPreview from "../components/events/event-preview"
 import EventNavigation from "../components/events/event-nav"
+import ReactHelmet from "../components/head";
 
 
-export default ()=>(
+export default ({location})=>(
     <div>
+        <ReactHelmet
+            tabTitle={"Upcoming | CBCOC"}
+        />
         <Toolbar
             isSolid={false}
         />

@@ -3,12 +3,16 @@ import Toolbar from "../components/toolbar"
 import FooterNav from "../components/footerNav"
 import Jumbotron from "../components/jumbotron"
 import FellowshipItem from "../components/fellowships/fellowship-item"
+import ReactHelmet from "../components/head";
 
 export default ({location})=>(
     // location is holds props that are passed from previous link
     // 
     // Will crash if page is loaded initially without linking
     <div>
+        <ReactHelmet
+            tabTitle={location.state.groupAbbrev+" | CBCOC"}
+        />
         <Toolbar
             isSolid={false}
         />
