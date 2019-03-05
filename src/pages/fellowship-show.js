@@ -7,22 +7,26 @@ import ReactHelmet from "../components/head";
 import fellowshipData from "../data/fellowship"
 
 function setLocationState(locationState){
+    
     if(locationState.state)
         return;
     let query = decodeURI(locationState.search);
     query=query.replace('?group=','');
+
+    locationState.state={};
+
     for(var fellowshipGroup of fellowshipData.fellowships){
         console.log(fellowshipGroup);
         if(fellowshipGroup.target_aud == query){
-            locationState.state.groupMeet=fellowshipGroup.meetings;
-            locationState.state.groupTimes=fellowshipGroup.times;
-            locationState.state.groupLoc=fellowshipGroup.location;
-            locationState.state.groupDesc=fellowshipGroup.description;
-            locationState.state.groupContact=fellowshipGroup.contact;
-            locationState.state.groupAbbrev=fellowshipGroup.abbrev;
-            locationState.state.groupAudience=fellowshipGroup.audience;
-            locationState.state.groupName=fellowshipGroup.name;
-            locationState.state.groupId=fellowshipGroup.target_aud;
+            locationState.state["groupMeet"]=fellowshipGroup.meetings;
+            locationState.state["groupTimes"]=fellowshipGroup.times;
+            locationState.state["groupLoc"]=fellowshipGroup.location;
+            locationState.state["groupDesc"]=fellowshipGroup.description;
+            locationState.state["groupContact"]=fellowshipGroup.contact;
+            locationState.state["groupAbbrev"]=fellowshipGroup.abbrev;
+            locationState.state["groupAudience"]=fellowshipGroup.audience;
+            locationState.state["groupName"]=fellowshipGroup.name;
+            locationState.state["groupId"]=fellowshipGroup.target_aud;
             return;
         }
     }
