@@ -3,11 +3,11 @@ import {withPrefix} from "gatsby"
 
 class LeaderCard extends React.Component {
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
+        console.log(this.props.id);
         this.state = {
-          count: 0,
-          staff_list: []
+          uri:"img/leadership/" + this.props.id+".jpg"
         };
     }
     
@@ -20,7 +20,7 @@ class LeaderCard extends React.Component {
         <div className="col-md-4">
                 {/* <!-- Trigger the modal with a clickable card of leader's picture and name --> */}
                 <div className="container text-center" data-toggle="modal" data-target={"#"+this.props.id}>
-                    <img className="leader-img-card" alt="" src={withPrefix("img/leadership/" + this.props.id+".jpg")}/>
+                    <img className="leader-img-card" alt="" src={withPrefix(this.state.uri)} onError={()=>this.setState({uri:"img/leadership/no-photo.png"})}/>
                     <h3>{this.props.name}</h3>
                     <p>{this.props.title}</p>
                 </div>

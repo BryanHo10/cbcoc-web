@@ -4,7 +4,7 @@ import FooterNav from "../components/footerNav"
 import Jumbotron from "../components/jumbotron"
 import ReactHelmet from "../components/head"
 import missionData from "../data/cbcoc-mission.json"
-import MissionTile from "../components/missions/tiles";
+import MissionTile from "../components/missions/mission-tile";
 
 
 //failed doing withPrefix from static?

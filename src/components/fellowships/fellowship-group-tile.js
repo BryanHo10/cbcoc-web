@@ -7,10 +7,18 @@ import {withPrefix, Link} from "gatsby"
 //  id = lowercase with "_" and replacing whitespace and "/" (i.e. middle_high_school)
 
 class GroupTile extends React.Component{
+    constructor(props) {
+        super(props);
+    
+        this.state = {
+          uri:"img/"+this.props.id+".png"
+        };
+    }
+
     render(){
         return(
             <div className="col-md-6 text-center">
-                <img id="group-img-card" alt="" src={withPrefix("img/"+this.props.id)+".jpg"}></img>
+                <img id="group-img-card" alt="" src={withPrefix(this.state.uri)} onError={()=>this.setState({uri:"img/unavailable.png"})}></img>
                 <Link to={'/fellowship-show?id='+this.props.target_aud}
                     state={{
                         groupId:this.props.target_aud,
