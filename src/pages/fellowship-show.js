@@ -11,7 +11,7 @@ function setLocationState(locationState){
     if(locationState.state)
         return;
     let query = decodeURI(locationState.search);
-    query=query.replace('?group=','');
+    query=query.replace('?id=','');
 
     locationState.state={};
 

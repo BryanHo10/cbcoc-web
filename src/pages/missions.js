@@ -2,13 +2,13 @@ import React from "react"
 import Toolbar from "../components/toolbar"
 import FooterNav from "../components/footerNav"
 import Jumbotron from "../components/jumbotron"
-import GroupTile from "../components/fellowships/fellowship-group-tile";
 import ReactHelmet from "../components/head"
-import fellowshipData from "../data/fellowship.json"
+import missionData from "../data/cbcoc-mission.json"
+import MissionTile from "../components/missions/tiles";
 
 
 //failed doing withPrefix from static?
-let fellowshipJSON=fellowshipData.fellowships;
+let missionJSON=missionData.missions;
 
 
 // need to make description field for jumbotron -- "Join in God's work among the nations"
@@ -24,26 +24,26 @@ export default ({location})=>(
 			isSolid={false}
 		/>
 		<Jumbotron
-			desc=""
-			image="upcoming.png"
+			desc="Join in God’s work among the nations"
+			image="/missions/globe.jpg"
 			title="MISSION TRIPS" 
 			title2="" 
 		/>
 		<div className="row container-fluid">
 		  {
-			fellowshipJSON.map((fellowship) => {
+				
+			Object.keys(missionJSON).map((mission) => {
+				console.log();
 				return(
-					<GroupTile
-					  target_aud={fellowship.target_aud}
-					  id={fellowship.target_aud.toLowerCase().replace(/ |\//g,"_")}
-					  name={fellowship.name}
-					  abbrev={fellowship.abbrev}
-					  desc={fellowship.description}
-					  meetings={fellowship.meetings}
-					  times={fellowship.times}
-					  loc={fellowship.location}
-					  contact={fellowship.contact}
-					  audience={fellowship.audience}
+					<MissionTile
+					  id={mission.toLowerCase().replace(/ |\//g,"_")}
+					  name={mission}
+					  desc={missionJSON[mission].description}
+						loc={missionJSON[mission].location}
+						upcoming={missionJSON[mission].upcoming}
+						requirements={missionJSON[mission].requirements}
+						contact={missionJSON[mission].contact}
+						cost={missionJSON[mission].cost}
 					/>
 				);
 
