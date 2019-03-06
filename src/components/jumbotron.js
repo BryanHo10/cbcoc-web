@@ -11,11 +11,18 @@ import {withPrefix} from "gatsby"
 
 class Jumbotron extends React.Component {
   //Probably should take a MainObject instead of individual props.
+  constructor(props){
+    super(props);
+
+    this.state={
+      uri:"img/" + this.props.image
+    };
+  }
   render() {
     return (
       <div id="jumbo-container">
       <div className="jumbo">
-        <img id="jumbo-image" alt="" src={withPrefix("img/" + this.props.image)} />
+        <img id="jumbo-image" alt="" src={withPrefix(this.state.uri)} onError={()=>this.setState({uri:"img/no-cover.png"})} />
         
         <h2>{this.props.title}</h2>
         <h2>{this.props.title2}</h2>

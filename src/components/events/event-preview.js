@@ -6,14 +6,19 @@ import {withPrefix, Link} from "gatsby"
 
 // PROPS: NAME | DATE | LOC | DESC | img | id
 class EventPreview extends React.Component {
-
+    constructor(props){
+        super(props);
+        this.state = {
+            uri:"img/"+this.props.id+".png"
+        };
+    }
     render() {
       
       return (
         <div id="event-preview" className="container-fluid">
             <div className="row">
                 <div className="col-md-6 text-center py-5">
-                    <img className="event-img-card" alt="" src={withPrefix("img/"+this.props.id+".png")}/>
+                    <img className="event-img-card" alt="" src={withPrefix(this.state.uri)} onError={()=>this.setState({uri:"img/unavailable.png"})} />
 
                 </div>
                 <div className="col-md-6 py-5">

@@ -44,6 +44,7 @@ export default ({location})=>(
 						requirements={missionJSON[mission].requirements}
 						contact={missionJSON[mission].contact}
 						cost={missionJSON[mission].cost}
+						participate={missionJSON[mission].participate}
 					/>
 				);
 

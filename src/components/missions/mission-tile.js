@@ -28,7 +28,8 @@ class MissionTile extends React.Component{
                         missionUpcoming:this.props.upcoming,
                         missionContact:this.props.contact,
                         missionDate:this.props.date,
-                        missionRequire:this.props.requirements                        
+                        missionRequire:this.props.requirements,
+                        missionParticipate:this.props.participate                        
                         }}                
                 >
                     <h3>{this.props.name}</h3>

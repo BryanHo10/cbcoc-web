@@ -23,7 +23,12 @@
                             "email":"eugene.s.kim1@gmail.com"
                             }
                         ],
-                        "participate":""    
+                        "participate":
+                        {
+                            "Through Prayer":"It is only God who can change the hearts of people to turn toward Him and find joy in the gift of salvation. Pray that the Lord can prepare the way for the missions team and pray that the Lord will be glorified in the mission work our team do. Pray for the people of Mexico and daily struggles they face in their lives. Pray that our help for their daily needs will show them the Lord’s compassion. Pray for the safety of the mission team members.",
+                            "Join a Mission Team":"All you need is a passport, be willing to commit a whole Saturday, have the CBCOC missions training, and heart to serve the Lord through missions. Various activities include working with children, providing some medical needs, fixing or painting local church facilities, teaching, and handing out care packages.",
+                            "Donations":"You can also give donations. We accept canned goods, rice and beans."
+                        }    
                     }
             ,
             "Pala":{
@@ -45,7 +50,10 @@
                             "email":""
                             }
                         ],
-                        "participate":""    
+                        "participate":
+                        {
+                            "Through Prayer":"N/A"
+                        }
                     }
             ,
             "Many Farms":{
@@ -67,7 +75,10 @@
                                 "email":""
                                 }
                             ],
-                            "participate":""    
+                            "participate":
+                            {
+                                "Through Prayer":"N/A"
+                            }
                         }
             ,
             "Honduras":{
@@ -89,7 +100,10 @@
                                 "email":""
                                 }
                             ],
-                            "participate":""    
+                            "participate":
+                            {
+                                "Through Prayer":"N/A"
+                            }
                         }
             ,
             "Belize":{
@@ -111,7 +125,10 @@
                     "email":""
                     }
                 ],
-                "participate":""    
+                "participate":
+                {
+                    "Through Prayer":"N/A"
+                }
             }
             ,
             "East Asia":{
@@ -133,7 +150,10 @@
                                 "email":""
                                 }
                             ],
-                            "participate":""    
+                            "participate":
+                            {
+                                "Through Prayer":"N/A"
+                            }
                         }
         }
 }
