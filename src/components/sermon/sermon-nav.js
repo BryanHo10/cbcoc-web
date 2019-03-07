@@ -12,7 +12,13 @@ class SermonNav extends React.Component {
                     <div className="mr-auto px-5 py-4">
                         <Link   style={endOldZone}
                                 id="backtrack-events" 
-                                to={"/sermon-eng?fromIndex="+this.props.currentIndex+"&toIndex="+(this.props.currentIndex+this.props.intervalIndex)} >
+                                to={"/sermon-eng?fromIndex="+this.props.currentIndex+"&toIndex="+(this.props.currentIndex+this.props.intervalIndex)} 
+                                state={{
+                                    fromIndex:this.props.currentIndex,
+                                    toIndex:(this.props.currentIndex+this.props.intervalIndex),
+                                    direction:1
+                                }}
+                            >
                                     <h6 className="fa-solid" id="attach-icon"></h6>
                                     <h6 id="attach-icon"> Older Events  </h6>
                         </Link>
@@ -20,7 +26,12 @@ class SermonNav extends React.Component {
                     <div className="px-5 py-4">
                         <Link   style={endNewZone}
                                 id="backtrack-events" 
-                                to={"/sermon-eng?fromIndex="+this.props.currentIndex+"&toIndex="+(this.props.currentIndex-this.props.intervalIndex)}
+                                to={"/sermon-eng?fromIndex="+(this.props.currentIndex-2*this.props.intervalIndex)+"&toIndex="+(this.props.currentIndex-this.props.intervalIndex)}
+                                state={{
+                                    fromIndex:(this.props.currentIndex-2*this.props.intervalIndex),
+                                    toIndex:(this.props.currentIndex-this.props.intervalIndex),
+                                    direction:-1
+                                }}
                             >
                                     <h6 id="attach-icon">Newer Sermons  </h6>
                                     <h6 className="fa-solid" id="attach-icon"></h6>

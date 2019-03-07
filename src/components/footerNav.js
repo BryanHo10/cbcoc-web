@@ -43,7 +43,17 @@ class FooterNav extends React.Component{
                     <div className="col-md">
                         <p className="footer-head"><b>SERMONS</b></p>
                         <ul className="sub-list">
-                            <li><Link to="/sermon-eng?fromIndex=0&toIndex=10">English</Link></li>
+                            <li>
+                                <Link to="/sermon-eng?fromIndex=0&toIndex=10"
+                                    state={{
+                                        fromIndex:0,
+                                        toIndex:10,
+                                        direction:1
+                                    }}
+                                >
+                                    English
+                                </Link>
+                            </li>
                             <li><Link to="/mand-sermon">Mandarin</Link></li>
                             <li><Link to="/cant-sermon">Cantonese/English</Link></li>
                         </ul>

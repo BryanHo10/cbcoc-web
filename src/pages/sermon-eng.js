@@ -21,29 +21,44 @@ let sermonSet=[];
 let sermonData=sermonEng.reverse();
 let noNewer = true;
 let noOlder = false;
-let direction;
+
 
 function setSermonDisplay(locationState){
+    let direction;
     
-    if(locationState.search)
-    {
+    if(locationState.state === null){
         // Extracts URL Parameters to identify indices
         let query=locationState.search.replace(/=/g,'&');
         query=query.split('&');
         index=parseInt(query[1]);
         direction=Math.sign(parseInt(query[3])-index);
 
-        if(direction == 0)
+
+        //set Location State
+        locationState.state={
+            fromIndex:index,
+            toIndex:parseInt(query[3]),
+            direction:1
+        };
+
+        console.log(locationState.state);
+
+        if(direction === 0)
             direction=-1;
-        if(direction == -1){
-
-            index=parseInt(query[3]);
-
+        if(direction === -1){
+            console.log(index);
+            index=parseInt(query[3])-index;
+            console.log(index);
         }
+        locationState.state["direction"]=direction;
 
     }
+    else{
+        direction=locationState.state.direction;
+        index=locationState.state.fromIndex;
+    }
     // True/False - determing "hidden" style for navigations
-    if(index == 0){
+    if(index <= 0){
         noNewer=true;
     }
     else{
@@ -58,7 +73,8 @@ function setSermonDisplay(locationState){
 
     for(let count = 0;count<10;count++){
         let message=sermonData[index];
-        if(message){
+        console.log(message,index)
+        if(message !== undefined){
             sermonSet[index%interval]=(
                 <MessageView
                     index={message.id} 
@@ -79,9 +95,9 @@ function setSermonDisplay(locationState){
         }
         
     }
-    if(direction == -1){
-        index-=sermonSet.length;
-    }
+    // if(direction === -1)
+    //     index-=sermonSet.length;
+
     return;
 }
 
@@ -95,12 +111,13 @@ function setSermonDisplay(locationState){
         <Toolbar
             isSolid={true}
         />
-
+        {setSermonDisplay(location)}
         <h1 id="leader-title" className="py-3">English Service Sermons</h1>
-        <h3 id="leader-title" className="py-3">{index} - {index+(direction*interval)}</h3>
+        {console.log(sermonData.length)}
+        <h3 id="leader-title" className="py-3">{location.state.fromIndex} - {location.state.toIndex}</h3>
 
             {/* Pushing each item in the list of leaders || staff: Person object */}
-            {setSermonDisplay(location)}
+            
             {sermonSet.map((messageHTML)=>{
                 return (
                     messageHTML
