@@ -23,12 +23,14 @@ class MessageView extends React.Component {
 		let dateValues = dateString.split(' '); // [Wed, Jul, 28, 1993]
 		let month = dateValues[1];
 		let day = dateValues[2];
+		let year = dateValues[3];
 
 
 		return(
-			<div className="container-fluid border-bottom row">
+			<div className="container-fluid border-bottom row py-3">
 				<div className="col-lg-2 text-center">
-					<h1>{month}<br/>{day}</h1>		
+					<h5>{year}</h5>	
+					<h1>{month}<br/>{day}</h1>	
 				</div> 
 				<div className="col-lg">
 					<h2>{this.props.title}</h2>
