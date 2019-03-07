@@ -65,7 +65,7 @@ class MissionItem extends React.Component {
                 <div id="column-info" className="col-md">
                     <div className="py-2">
                         <h5 className="pb-3 darkblue-tag">Description</h5>
-                        <p id="desc-view" className="py-3">{this.props.desc}</p>
+                        <p id="desc-view" className="pb-3">{this.props.desc}</p>
                     </div>
                     <div className="py-2">
                         <h5 className="pb-3 darkblue-tag">How you can be involved</h5>

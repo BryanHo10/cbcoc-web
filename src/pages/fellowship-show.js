@@ -17,7 +17,7 @@ function setLocationState(locationState){
 
     for(var fellowshipGroup of fellowshipData.fellowships){
         console.log(fellowshipGroup);
-        if(fellowshipGroup.target_aud == query){
+        if(fellowshipGroup.target_aud === query){
             locationState.state["groupMeet"]=fellowshipGroup.meetings;
             locationState.state["groupTimes"]=fellowshipGroup.times;
             locationState.state["groupLoc"]=fellowshipGroup.location;

@@ -12,6 +12,12 @@ import React from "react"
 */
 
 class MessageView extends React.Component {
+	constructor(props){
+		super(props);
+		this.state = {
+			
+		};
+	}
 	render(){
 		let dateString = new Date(this.props.date).toDateString();
 		let dateValues = dateString.split(' '); // [Wed, Jul, 28, 1993]
@@ -20,16 +26,19 @@ class MessageView extends React.Component {
 
 
 		return(
-			<div className="container-fluid border-bottom">
-				<div>
+			<div className="container-fluid border-bottom row">
+				<div className="col-lg-2 text-center">
 					<h1>{month}<br/>{day}</h1>		
 				</div> 
-				<div>
+				<div className="col-lg">
 					<h2>{this.props.title}</h2>
-					<h4>{this.props.speaker}<br/>{this.props.passage}</h4>	
+					<h4>{this.props.speaker}<br/>{this.props.passage}</h4>
+					<audio controls className="border container-fluid">
+						<source src={this.props.audio_link} />
+					</audio>	
 				</div>
-				<div>
-					<h5 className="fa-solid"> Download</h5>
+				<div className="col-lg-2">
+					<h5 className="fa-solid"><a href="./english_2018_12_16_cheung.mp3" download> Download</a></h5>
 					<h5 className="fa-solid"><a href={this.props.audio_link}> Link</a></h5>
 				</div>  
 			</div>

@@ -4,7 +4,7 @@ import FooterNav from "../components/footerNav"
 import Jumbotron from "../components/jumbotron"
 import BaptistFaithMessage from "../components/statement/baptist"
 import ReactHelmet from "../components/head"
-import {withPrefix} from "gatsby"
+
 
 
 export default ({location}) => (

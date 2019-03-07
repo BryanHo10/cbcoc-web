@@ -1,6 +1,7 @@
 import React from "react"
 import Toolbar from "../components/toolbar"
 import FooterNav from "../components/footerNav"
+import SermonNav from "../components/sermon/sermon-nav"
 import MessageView from "../components/sermon/message-view"
 import ReactHelmet from "../components/head"
 import sermonEng from "../data/cbcoc_eng"
@@ -14,21 +15,54 @@ import sermonEng from "../data/cbcoc_eng"
         "speaker": "Pastor Ryan Cheung",
         "audio_link": "http://www.cbcoc.org/content/media/audio/englishworship/english_2018_11_18_cheung.mp3"
 */
-  export default ({location}) => (
-    <div>
-      {/* <p>Such wow. Very React.</p> */}
-      <ReactHelmet
-            tabTitle={"Sermons | CBCOC"}
-        />
-      <Toolbar
-        isSolid={true}
-      />
+let interval = 10;
+let index=0;
+let sermonSet=[];
+let sermonData=sermonEng.reverse();
+let noNewer = true;
+let noOlder = false;
+let startIndex,endIndex;
 
-      <h1 id="leader-title" className="py-3">English Service Sermons</h1>
+function setSermonDisplay(locationState){
+    // console.log(locationState.search);
+    let direction;
+    if(locationState.search)
+    {
+        let query=locationState.search.replace(/=/g,'&');
+        query=query.split('&');
+        // console.log(query);
+        index=parseInt(query[1]);
+        direction=Math.sign(parseInt(query[3])-index);
+        startIndex=index;
+        endIndex=parseInt(query[3]);
+        if(direction == 0)
+            direction=-1;
+        // console.log(direction);
+        if(direction == -1){
 
-        {/* Pushing each item in the list of leaders || staff: Person object */}
-        {sermonEng.reverse().map((message)=>{
-            return (
+            index=parseInt(query[3]);
+            startIndex=index;
+        }
+
+    }
+    
+    if(index == 0){
+        noNewer=true;
+    }
+    else{
+        noNewer=false;
+    }
+    if(index+interval >= sermonData.length){
+        noOlder=true;
+    }
+    else{
+        noOlder=false;
+    }
+
+    for(let count = 0;count<10;count++){
+        let message=sermonData[index];
+        if(message){
+            sermonSet[index%interval]=(
                 <MessageView
                     index={message.id} 
                     title={message.title}
@@ -39,12 +73,49 @@ import sermonEng from "../data/cbcoc_eng"
                     speaker={message.speaker}
                     audio_link={message.audio_link}
                 />
-
-
             );
-        } )}
+            index++;
+        }
+        else{
+                       
+            return;
+        }
+        
+    }
+    if(direction == -1){
+        index-=sermonSet.length;
+    }
+    return;
+}
 
-      <FooterNav/>
+
+  export default ({location}) => (
+    <div>
+        {/* <p>Such wow. Very React.</p> */}
+        <ReactHelmet
+                tabTitle={"Sermons | CBCOC"}
+            />
+        <Toolbar
+            isSolid={true}
+        />
+
+        <h1 id="leader-title" className="py-3">English Service Sermons</h1>
+
+            {/* Pushing each item in the list of leaders || staff: Person object */}
+            {setSermonDisplay(location)}
+            {sermonSet.map((messageHTML)=>{
+                return (
+                    messageHTML
+                );
+            } )}
+        <SermonNav
+            currentIndex={index}
+            intervalIndex={interval}
+            hideOlder={noOlder}
+            hideNewer={noNewer}
+            
+        />
+        <FooterNav/>
     </div>
   )
   
