@@ -38,7 +38,7 @@ class MessageView extends React.Component {
 					</audio>	
 				</div>
 				<div className="col-lg-2">
-					<h5 className="fa-solid"><a href="./english_2018_12_16_cheung.mp3" download> Download</a></h5>
+					<h5 className="fa-solid"><a href={this.props.audio_link} download> Download</a></h5>
 					<h5 className="fa-solid"><a href={this.props.audio_link}> Link</a></h5>
 				</div>  
 			</div>
