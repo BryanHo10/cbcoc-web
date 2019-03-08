@@ -13,15 +13,15 @@ class ServiceHome extends React.Component {
             <div id="service-info" className="row">
               <div className="col-sm text-center ">
                 <h5 className="lightblue-tag">English Service</h5>
-                <p>9:15 - 10:30 AM <br/>Fellowship Hall</p>
+                <p>9:15 - 10:30 AM<br/>Fellowship Hall</p>
               </div>
               <div id="service-center" className="col-sm text-center">
                 <h5 className="lightblue-tag">Mandarin Service</h5>
-                <p>9:15 - 10:30 AM <br/>Sanctuary</p>
+                <p>9:15 - 10:30 AM<br/>Sanctuary</p>
               </div>
               <div className="col-sm text-center ">
                 <h5 className="lightblue-tag">Bilingual Service</h5>
-                <p>10:45 AM - 12:00 PM <br/>Sanctuary</p>
+                <p>10:45 AM - 12:00 PM<br/>Sanctuary</p>
               </div>
             </div>
           </div>

@@ -159,6 +159,11 @@
     width:85%;
     margin: auto;
 }
+#tri-info{
+    padding-bottom: 100px;
+    width:85%;
+    margin: auto;
+}
 #service-center{
     border-left: 2px solid  var(--lightgray);
     border-right: 2px solid  var(--lightgray);

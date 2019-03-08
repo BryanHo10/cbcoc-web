@@ -15,7 +15,7 @@ import sermonEng from "../data/cbcoc_eng_rev"
         "speaker": "Pastor Ryan Cheung",
         "audio_link": "http://www.cbcoc.org/content/media/audio/englishworship/english_2018_11_18_cheung.mp3"
 */
-let interval = 10;  // displays n messages per page
+let interval = 15;  // displays n messages per page
 let index=0;        
 let sermonSet=[];
 let noNewer = true;
@@ -71,7 +71,7 @@ function setSermonDisplay(locationState){
 
     // Populates array of Message Components
     sermonSet=[];
-    for(let count = 0;count<10;count++){
+    for(let count = 0;count<interval;count++){
         let message=sermonEng[index];
         if(message !== undefined){
             sermonSet[index%interval]=(
@@ -110,7 +110,7 @@ function setSermonDisplay(locationState){
         />
         {setSermonDisplay(location)}
         <h1 id="leader-title" className="py-3">English Service Sermons</h1>
-        <h3 id="leader-title" className="py-3">{location.state.fromIndex} - {location.state.toIndex}</h3>
+        <h3 id="leader-title" className="py-3">Page: {index/interval}</h3>
 
             {/* Pushing each item in the list of leaders || staff: Person object */}
             
@@ -123,8 +123,7 @@ function setSermonDisplay(locationState){
             currentIndex={index}
             intervalIndex={interval}
             hideOlder={noOlder}
-            hideNewer={noNewer}
-            
+            hideNewer={noNewer}            
         />
         <FooterNav/>
     </div>

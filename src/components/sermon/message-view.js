@@ -33,7 +33,7 @@ class MessageView extends React.Component {
 					<h1>{month}<br/>{day}</h1>	
 				</div> 
 				<div className="col-lg">
-					<h2>{this.props.title}</h2>
+					<h2 id="message-title" className="border">{this.props.title}</h2>
 					<h4>{this.props.speaker}<br/>{this.props.passage}</h4>
 					<audio controls className="border container-fluid">
 						<source src={this.props.audio_link} />

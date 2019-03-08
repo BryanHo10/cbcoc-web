@@ -20,7 +20,7 @@ class SermonNav extends React.Component {
                                 }}
                             >
                                     <h6 className="fa-solid" id="attach-icon"></h6>
-                                    <h6 id="attach-icon"> Older Events  </h6>
+                                    <h6 id="attach-icon"> Older Sermons  </h6>
                         </Link>
                     </div>
                     <div className="px-5 py-4">
