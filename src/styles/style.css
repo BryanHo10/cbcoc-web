@@ -239,3 +239,11 @@
     height:100vh;
     background-color: var(--darkblue);
 }
+
+/* Button Styling */
+.darkbutton{
+    background-color: var(--darkblue);
+    padding:10px;
+    color: white;
+    font-size: 25px;
+}

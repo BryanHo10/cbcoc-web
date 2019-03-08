@@ -2,16 +2,18 @@ import React from "react"
 
 class ContactForm extends React.Component{
     render(){
-        let mapStyling={border:0, width:"70%"};
         return(
             <div className="text-center container-fluid py-3">
                 <h1 className="darkblue-tag pb-4">Contact Us</h1>
-                <p className="darkblue-tag pb-4">We would love to hear<br/>from you.</p>
-                <div>
-                    <input className="container-fluid" type="text" placeholder="Name"/>
-                    <input className="container-fluid my-3" type="text" placeholder="Name"/>
-                    <input className="container-fluid" type="text" placeholder="Name"/>
-                    <input className="container-fluid mt-3" type="text" placeholder="Name"/>
+                <h4 className="darkblue-tag pb-4">We would love to hear<br/>from you.</h4>
+                <div id="contact-input">
+                    <input className="container-fluid form-control form-control-lg" type="text" name="" placeholder="Name"/>
+                    <input className="container-fluid form-control form-control-lg my-3" type="text" name="email" placeholder="Email"/>
+                    <input className="container-fluid form-control form-control-lg" type="text" name="subject" placeholder="Subject"/>
+                    <textarea className="container-fluid form-control form-control-lg mt-3" type="text" rows="6" name="message" placeholder="Message"/>
+                </div>
+                <div className="py-5 mx-auto">
+                    <button type="button" class="btn darkbutton border px-5 py-2">Send</button>
                 </div>
             </div>
         )
