@@ -10,7 +10,12 @@
     margin: auto;
     font-size: 36px;
 }
-
+#after-contact{
+    opacity:1;
+    color:var(--darkblue);
+    transition: opacity 2s;
+    -webkit-transition: opacity 2s;
+}
 /* Button Styling */
 .darkbutton{
     background-color: var(--darkblue);
