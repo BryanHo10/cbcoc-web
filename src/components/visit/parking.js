@@ -9,7 +9,7 @@ class ParkingView extends React.Component{
         };
     }
     render(){
-        let imgStyling={border:0, width:"60%", "padding-bottom":"70px"};
+        let imgStyling={border:0, width:"60%", "paddingBottom":"70px"};
         return(
             <div className="text-center container-fluid py-3">
                 <h1 className="darkblue-tag text-center container-fluid pb-4">Parking</h1>

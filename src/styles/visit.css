@@ -10,3 +10,15 @@
     margin: auto;
     font-size: 36px;
 }
+
+/* Button Styling */
+.darkbutton{
+    background-color: var(--darkblue);
+    padding:10px;
+    color: white;
+    font-size: 25px;
+}
+.darkbutton:hover{
+    background-color: var(--dilutedblue);
+    color: white;
+}

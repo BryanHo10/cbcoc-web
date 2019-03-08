@@ -6,6 +6,7 @@
     --lightblue:#55D4FF;
     --lightgray:rgb(178, 179, 179);
     --eggshell:#F2F4F4;
+    --dilutedblue:rgb(16, 50, 87);
 }
 /* Font styles class names*/
 .fa-solid{
@@ -240,10 +241,3 @@
     background-color: var(--darkblue);
 }
 
-/* Button Styling */
-.darkbutton{
-    background-color: var(--darkblue);
-    padding:10px;
-    color: white;
-    font-size: 25px;
-}
