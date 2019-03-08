@@ -4,6 +4,9 @@ import FooterNav from "../components/footerNav"
 import Jumbotron from "../components/jumbotron"
 import TriFoldService from "../components/visit/tri-fold-info"
 import ReactHelmet from "../components/head"
+import MapView from "../components/visit/map-view";
+import ParkingView from "../components/visit/parking";
+import ContactForm from "../components/visit/contact";
 
 
 export default ({location}) => (
@@ -61,7 +64,6 @@ export default ({location}) => (
     />
     <h4 className="darkblue-tag text-center container-fluid pb-4">Please stay for lunch. Guests eat for free.</h4>
     <MapView/>
-    <h1 className="darkblue-tag text-center container-fluid pb-4">Parking</h1>
     <ParkingView/>
     <ContactForm/>
     <FooterNav/>
