@@ -1,5 +1,7 @@
 import React from "react"
 import {withPrefix, Link} from "gatsby"
+import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import MenuDrop from "../components/home/button-drop"
 
 // PROPS: isSolid(true/false)
 //  isSolid
@@ -8,7 +10,8 @@ import {withPrefix, Link} from "gatsby"
 
 
 class Toolbar extends React.Component {
-
+  //Taken from reactstrap "Dropdown" example
+  
   render() {
 
     //Sets the toolbar style based on props (isSolid)
@@ -34,11 +37,23 @@ class Toolbar extends React.Component {
 
         <div className="col-sm">
           <div className="toolbar-links">
-            <Link to="/about">ABOUT</Link>
-            <Link to="/ministries">MINISTRIES</Link>
-            <Link to="/events-upcoming">EVENTS</Link>
-            <Link to="/sermons">SERMONS</Link>
-            <Link to="/visit">VISIT</Link>
+            <MenuDrop
+              header="About"
+              menuItems={["Vision","Statement of Faith","LeaderShip"]}
+            />
+            <MenuDrop
+              header="Ministries"
+              menuItems={["Fellowship Groups","Mission Trips"]}
+            />
+            <MenuDrop
+              header="Events"
+              menuItems={["Upcoming","Calendar"]}
+            />
+            <MenuDrop
+              header="Sermons"
+              menuItems={["English","Mandarin","Cantonese"]}
+            />
+            <button>Visit</button>
           </div>
         </div>
         </div>
