@@ -23,7 +23,16 @@
 #toolbar-container {
     width:100%;
 }
-
+#drop-toggle{
+    background-color: Transparent; 
+    background-repeat:no-repeat;
+    border: none;
+    outline: none !important;
+}
+#drop-menu{
+    /* margin-top:22px; */
+    background-color: var(--eggshell);
+}
 #banner-logo{    
     margin-top:22px;
     margin-left:66px;
@@ -36,8 +45,9 @@
     justify-content: space-between;
 
     /*padding: 44px, 66px, 0px, 0px;*/
-    padding-top:44px;
+    padding-top:22px;
     padding-right:66px;
+
 }
 .toolbar-links > a {
     font-size: 20px;

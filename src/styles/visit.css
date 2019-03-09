@@ -27,3 +27,9 @@
     background-color: var(--dilutedblue);
     color: white;
 }
+#visit-btn{
+    background-color: Transparent; 
+    background-repeat:no-repeat;
+    border: 2px solid white !important;
+    outline: none;
+}

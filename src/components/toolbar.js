@@ -1,6 +1,5 @@
 import React from "react"
 import {withPrefix, Link} from "gatsby"
-import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import MenuDrop from "../components/home/button-drop"
 
 // PROPS: isSolid(true/false)
@@ -37,23 +36,33 @@ class Toolbar extends React.Component {
 
         <div className="col-sm">
           <div className="toolbar-links">
+
+          {/* About Dropdown */}
             <MenuDrop
               header="About"
-              menuItems={["Vision","Statement of Faith","LeaderShip"]}
+              menuItems={{"Vision":"/vision","Statement of Faith":"/statement","Leadership":"/leadership"}}
             />
+          {/* Ministries Dropdown */}
             <MenuDrop
               header="Ministries"
-              menuItems={["Fellowship Groups","Mission Trips"]}
+              menuItems={{"Fellowship Groups":"/fellowships","Mission Trips":"missions"}}
             />
+          {/* Events Dropdown */}
             <MenuDrop
               header="Events"
-              menuItems={["Upcoming","Calendar"]}
+              menuItems={{"Upcoming":"/events-upcoming","Calendar":"/calendar"}}
             />
+          {/* Sermons Dropdown */}
             <MenuDrop
               header="Sermons"
-              menuItems={["English","Mandarin","Cantonese"]}
+              menuItems={{"English":"/sermon-eng?fromIndex=0&toIndex=15","Mandarin":"/sermon-eng?fromIndex=0&toIndex=15","Cantonese":"/sermon-eng?fromIndex=0&toIndex=15"}}
             />
-            <button>Visit</button>
+          {/* Visit Button */}
+            <Link
+              to="/visit">
+              <button id="visit-btn" type="button" className="btn btn-lg btn-primary">Visit</button>
+            </Link>
+
           </div>
         </div>
         </div>

@@ -24,6 +24,7 @@ let noOlder = false;
 
 function setSermonDisplay(locationState){
     let direction;
+    console.log(locationState);
     if(locationState.state === null){
         // Extracts URL Parameters to identify indices
         let query=locationState.search.replace(/=/g,'&');

@@ -21,15 +21,23 @@ class MenuDrop extends React.Component{
 
     render(){
         return(
-        <ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-              <DropdownToggle size="lg">
+        <ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle} id="drop-toggle">
+              <DropdownToggle size="lg" id="drop-toggle">
                 {this.props.header}
               </DropdownToggle>
-              <DropdownMenu>
+              <DropdownMenu id="drop-menu">
                   {
-                      this.props.menuItems.map((navItem)=>{
+                      Object.keys(this.props.menuItems).map((navItem)=>{
                           return(
-                              <DropdownItem>{navItem}</DropdownItem>
+                            <Link to={this.props.menuItems[navItem]}
+                                  state={{
+                                    fromIndex:0,
+                                    toIndex:15,
+                                    direction:1
+                                }}
+                              >
+                              <DropdownItem className="py-2">{navItem}</DropdownItem>
+                            </Link>
                           );
                       })
                   }
