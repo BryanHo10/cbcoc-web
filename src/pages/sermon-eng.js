@@ -51,8 +51,10 @@ function setSermonDisplay(locationState){
 
     }
     else{
-        direction=locationState.state.direction;
-        index=locationState.state.fromIndex;
+        if(locationState.state){
+            direction=locationState.state.direction;
+            index=locationState.state.fromIndex;
+        }
     }
 
     // True/False - determing "hidden" style for navigations

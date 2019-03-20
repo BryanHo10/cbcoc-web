@@ -26,6 +26,7 @@ class MissionItem extends React.Component {
                         <h5 className="pb-3 darkblue-tag">Upcoming Trip(s)</h5>
                         {
                            //Dynamically outputs formatted List of Upcoming Dates
+                           this.props.upcoming &&
                            this.props.upcoming.map((dates)=>{
                             return(
                                     <p className="my-1">{dates}</p>
@@ -41,6 +42,7 @@ class MissionItem extends React.Component {
                         <h5 className="pb-3 darkblue-tag">Requirements</h5>
                         {
                            //Dynamically outputs formatted List of Requirements
+                           this.props.requirements &&
                            this.props.requirements.map((needs)=>{
                             return(
                                 <p className="my-1">{needs}</p>
@@ -52,6 +54,7 @@ class MissionItem extends React.Component {
                         <h5 className="pb-3 darkblue-tag">Contact</h5>
                         {
                            //Dynamically outputs formatted List of Contact information for all persons
+                           this.props.contact &&
                            this.props.contact.map((leader)=>{
                             console.log(this.props);
                             return(<div className="py-1">
@@ -71,6 +74,7 @@ class MissionItem extends React.Component {
                         <h5 className="pb-3 darkblue-tag">How you can be involved</h5>
                         {
                            //Dynamically outputs formatted List of Participations
+                           this.props.participate &&
                            Object.keys(this.props.participate).map((action)=>{
                             return(<div className="py-1">
                                         <h6 className="darkblue-tag">{action}:</h6>

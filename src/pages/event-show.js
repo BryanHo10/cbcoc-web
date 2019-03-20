@@ -13,7 +13,7 @@ export default ({location})=>(
     // Will crash if page is loaded initially without linking
     <div>
         <ReactHelmet
-            tabTitle={location.state.eventName+" | CBCOC"}
+            tabTitle={location.state && location.state.eventName+" | CBCOC"}
         />
         <Toolbar
             isSolid={false}
@@ -22,7 +22,7 @@ export default ({location})=>(
         <Jumbotron
             desc=""
             image="upcoming.png"
-            title={location.state.eventName} 
+            title={location.state && location.state.eventName} 
             title2="" 
         />
         <EventItem
