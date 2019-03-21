@@ -56,7 +56,7 @@ function setSermonDisplay(locationState){
         index=locationState.state.fromIndex;
     }
 
-    // True/False - determing "hidden" style for navigations
+    // True/False - determine "hidden" style for navigations
     if(index <= 0){
         noNewer=true;
     }
