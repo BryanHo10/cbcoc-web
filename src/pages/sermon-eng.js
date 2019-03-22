@@ -23,7 +23,6 @@ let noBack = false;
 
 
 function setSermonDisplay(locationState){
-    let direction;
 
     console.log(locationState);
     
@@ -31,21 +30,25 @@ function setSermonDisplay(locationState){
         // Extracts URL Parameters to identify current page ?page=#
         let query=locationState.search.split('=');
         pageNumber=parseInt(query[1]);
-
+    
 
         //set Location State
         locationState.state={
             currentPage:pageNumber,
         };
+    }
+    else{
+        pageNumber=locationState.state.currentPage;
+    }
 
     // True/False - determine "hidden" style for navigations
-    if(pageNumber <= 1){
+    if(pageNumber*interval >= sermonEng.length || pageNumber < 1){
         noNext=true;
     }
     else{
         noNext=false;
     }
-    if(pageNumber*interval >= sermonEng.length){
+    if((pageNumber-1)*interval >= sermonEng.length || pageNumber <= 1){
         noBack=true;
     }
     else{
@@ -106,12 +109,10 @@ function setSermonDisplay(locationState){
                 );
             } )}
         <SermonNav
-            currentIndex={index}
-            intervalIndex={interval}
-            hideOlder={noBack}
-            hideNewer={noNext}            
+            currentPage={pageNumber}
+            hideBack={noBack}
+            hideNext={noNext}            
         />
         <FooterNav/>
     </div>
   )
-  

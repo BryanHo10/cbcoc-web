@@ -5,14 +5,13 @@ class SermonNav extends React.Component {
     render(){
         let endNewZone={display:`${this.props.hideNext ? "none":"block"}`};
         let endOldZone={display:`${this.props.hideBack ? "none":"block"}`};
-        console.log(this.props.hideNext,this.props.hideBack);
         return(
             <div className="container-fluid">
                 <div className="d-flex">
                     <div className="mr-auto px-5 py-4">
                         <Link   style={endOldZone}
                                 id="backtrack-events" 
-                                to={"/sermon-eng?page="+this.props.currentPage-1} 
+                                to={"/sermon-eng?page="+(this.props.currentPage-1)} 
                                 state={{
                                     currentPage:this.props.currentPage-1,
                                 }}
@@ -24,7 +23,7 @@ class SermonNav extends React.Component {
                     <div className="px-5 py-4">
                         <Link   style={endNewZone}
                                 id="backtrack-events" 
-                                to={"/sermon-eng?page="+this.props.currentPage+1}
+                                to={"/sermon-eng?page="+(this.props.currentPage+1)}
                                 state={{
                                     currentPage:this.props.currentPage+1,
                                 }}

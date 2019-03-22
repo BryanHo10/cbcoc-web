@@ -1,5 +1,5 @@
 import React from "react"
-import {withPrefix, Link} from "gatsby"
+import {Link} from "gatsby"
 import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
 
@@ -31,9 +31,7 @@ class MenuDrop extends React.Component{
                           return(
                             <Link to={this.props.menuItems[navItem]}
                                   state={{
-                                    fromIndex:0,
-                                    toIndex:15,
-                                    direction:1
+                                    currentPage:1
                                 }}
                               >
                               <DropdownItem className="py-2">{navItem}</DropdownItem>
