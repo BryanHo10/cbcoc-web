@@ -87,7 +87,3 @@ class FooterNav extends React.Component{
 }
 
 export default FooterNav;
-// ReactDOM.render(
-//     <FooterNav/>,
-//     document.getElementById('footer-container')
-//   );

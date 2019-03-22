@@ -15,13 +15,44 @@ import sermonEng from "../data/cbcoc_eng_rev"
         "speaker": "Pastor Ryan Cheung",
         "audio_link": "http://www.cbcoc.org/content/media/audio/englishworship/english_2018_11_18_cheung.mp3"
 */
-let interval = 15;  // displays n messages per page
+let interval = 15;  // displays n messages per page (editable)
 let pageNumber=0;        
 let sermonSet=[];
 let noNext = true;
 let noBack = false;
 
 
+
+export default ({location}) => (
+    <div>
+        {/* <p>Such wow. Very React.</p> */}
+        <ReactHelmet
+                tabTitle={"Sermons | CBCOC"}
+            />
+        <Toolbar
+            isSolid={true}
+        />
+        {setSermonDisplay(location)}
+        <h1 id="leader-title" className="py-3">English Service Sermons</h1>
+        <h3 id="leader-title" className="py-3">Page: {pageNumber}</h3>
+
+            {/* Pushing each item in the list of leaders || staff: Person object */}
+            
+            {sermonSet.map((messageHTML)=>{
+                return (
+                    messageHTML
+                );
+            } )}
+        <SermonNav
+            currentPage={pageNumber}
+            hideBack={noBack}
+            hideNext={noNext}            
+        />
+        <FooterNav/>
+    </div>
+)
+
+  
 function setSermonDisplay(locationState){
 
     console.log(locationState);
@@ -81,38 +112,5 @@ function setSermonDisplay(locationState){
         
         
     }
-    // if(direction === -1)
-    //     index-=sermonSet.length;
-
     return;
 }
-
-
-  export default ({location}) => (
-    <div>
-        {/* <p>Such wow. Very React.</p> */}
-        <ReactHelmet
-                tabTitle={"Sermons | CBCOC"}
-            />
-        <Toolbar
-            isSolid={true}
-        />
-        {setSermonDisplay(location)}
-        <h1 id="leader-title" className="py-3">English Service Sermons</h1>
-        <h3 id="leader-title" className="py-3">Page: {pageNumber}</h3>
-
-            {/* Pushing each item in the list of leaders || staff: Person object */}
-            
-            {sermonSet.map((messageHTML)=>{
-                return (
-                    messageHTML
-                );
-            } )}
-        <SermonNav
-            currentPage={pageNumber}
-            hideBack={noBack}
-            hideNext={noNext}            
-        />
-        <FooterNav/>
-    </div>
-  )
