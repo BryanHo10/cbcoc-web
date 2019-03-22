@@ -44,11 +44,9 @@ class FooterNav extends React.Component{
                         <p className="footer-head"><b>SERMONS</b></p>
                         <ul className="sub-list">
                             <li>
-                                <Link to="/sermon-eng?fromIndex=0&toIndex=15"
+                                <Link to="/sermon-eng?page=1"
                                     state={{
-                                        fromIndex:0,
-                                        toIndex:15,
-                                        direction:1
+                                        currentPage:1
                                     }}
                                 >
                                     English

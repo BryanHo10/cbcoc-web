@@ -16,66 +16,52 @@ import sermonEng from "../data/cbcoc_eng_rev"
         "audio_link": "http://www.cbcoc.org/content/media/audio/englishworship/english_2018_11_18_cheung.mp3"
 */
 let interval = 15;  // displays n messages per page
-let index=0;        
+let pageNumber=0;        
 let sermonSet=[];
-let noNewer = true;
-let noOlder = false;
+let noNext = true;
+let noBack = false;
 
 
 function setSermonDisplay(locationState){
     let direction;
+
     console.log(locationState);
+    
     if(locationState.state === null){
-        // Extracts URL Parameters to identify indices
-        let query=locationState.search.replace(/=/g,'&');
-        query=query.split('&');
-        index=parseInt(query[1]);
-        direction=Math.sign(parseInt(query[3])-index);
+        // Extracts URL Parameters to identify current page ?page=#
+        let query=locationState.search.split('=');
+        pageNumber=parseInt(query[1]);
 
 
         //set Location State
         locationState.state={
-            fromIndex:index,
-            toIndex:parseInt(query[3]),
-            direction:1
+            currentPage:pageNumber,
         };
 
-        // Direction determines whether user navigates (forwards/backwards), adjusting range
-        if(direction === 0)
-            direction=-1;
-        if(direction === -1){
-            console.log(index);
-            index=parseInt(query[3])-index;
-            console.log(index);
-        }
-        locationState.state["direction"]=direction;
-
-    }
-    else{
-        direction=locationState.state.direction;
-        index=locationState.state.fromIndex;
-    }
-
     // True/False - determine "hidden" style for navigations
-    if(index <= 0){
-        noNewer=true;
+    if(pageNumber <= 1){
+        noNext=true;
     }
     else{
-        noNewer=false;
+        noNext=false;
     }
-    if(index+interval >= sermonEng.length){
-        noOlder=true;
+    if(pageNumber*interval >= sermonEng.length){
+        noBack=true;
     }
     else{
-        noOlder=false;
+        noBack=false;
     }
 
     // Populates array of Message Components
     sermonSet=[];
-    for(let count = 0;count<interval;count++){
-        let message=sermonEng[index];
+    let startIndex=(pageNumber-1)*interval;
+    let endIndex=pageNumber*interval-1;
+    for(let messageIndex = startIndex;messageIndex<endIndex;messageIndex++){
+
+        let message=sermonEng[messageIndex];
+
         if(message !== undefined){
-            sermonSet[index%interval]=(
+            sermonSet[messageIndex%interval]=(
                 <MessageView
                     index={message.id} 
                     title={message.title}
@@ -89,7 +75,6 @@ function setSermonDisplay(locationState){
             );
             
         }
-        index++;
         
         
     }
@@ -111,7 +96,7 @@ function setSermonDisplay(locationState){
         />
         {setSermonDisplay(location)}
         <h1 id="leader-title" className="py-3">English Service Sermons</h1>
-        <h3 id="leader-title" className="py-3">Page: {index/interval}</h3>
+        <h3 id="leader-title" className="py-3">Page: {pageNumber}</h3>
 
             {/* Pushing each item in the list of leaders || staff: Person object */}
             
@@ -123,8 +108,8 @@ function setSermonDisplay(locationState){
         <SermonNav
             currentIndex={index}
             intervalIndex={interval}
-            hideOlder={noOlder}
-            hideNewer={noNewer}            
+            hideOlder={noBack}
+            hideNewer={noNext}            
         />
         <FooterNav/>
     </div>

@@ -55,7 +55,7 @@ class Toolbar extends React.Component {
           {/* Sermons Dropdown */}
             <MenuDrop
               header="Sermons"
-              menuItems={{"English":"/sermon-eng?fromIndex=0&toIndex=15","Mandarin":"/sermon-eng?fromIndex=0&toIndex=15","Cantonese":"/sermon-eng?fromIndex=0&toIndex=15"}}
+              menuItems={{"English":"/sermon-eng?page=1","Mandarin":"/sermon-eng?page=1","Cantonese":"/sermon-eng?page=1"}}
             />
           {/* Visit Button */}
             <Link
