@@ -27,15 +27,15 @@ class MessageView extends React.Component {
 
 
 		return(
-			<div className="container-fluid border-bottom row py-3">
+			<div className="container-fluid row py-3">
 				<div className="col-lg-2 text-center">
 					<h5>{year}</h5>	
 					<h1>{month}<br/>{day}</h1>	
 				</div> 
 				<div className="col-lg">
-					<h2 id="message-title" className="border">{this.props.title}</h2>
+					<h2 id="message-title">{this.props.title}</h2>
 					<h4>{this.props.speaker}<br/>{this.props.passage}</h4>
-					<audio controls className="border container-fluid">
+					<audio controls className="container-fluid">
 						<source src={this.props.audio_link} />
 					</audio>	
 				</div>

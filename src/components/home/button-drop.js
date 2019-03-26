@@ -34,7 +34,7 @@ class MenuDrop extends React.Component{
                                     currentPage:1
                                 }}
                               >
-                              <DropdownItem className="py-2">{navItem}</DropdownItem>
+                              <DropdownItem className="py-2" id="drop-menu-item">{navItem}</DropdownItem>
                             </Link>
                           );
                       })

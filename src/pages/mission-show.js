@@ -40,7 +40,6 @@ export default ({location})=>(
     // Will crash if page is loaded initially without linking
     <div>
         {setLocationState(location)}
-        {console.log(location)}
         <ReactHelmet
             tabTitle={location.state.missionName+" | CBCOC"}
         />
@@ -69,19 +68,3 @@ export default ({location})=>(
 
     </div>
 );
-    // missionId:this.props.id,
-    // missionName:this.props.name,
-    // missionDesc:this.props.desc,
-    // missionLoc:this.props.loc,
-    // missionCost:this.props.cost,
-    // missionUpcoming:this.props.upcoming,
-    // missionContact:this.props.contact,
-    // missionRequire:this.props.requirements 
-    
-
-    // locationState.state["missionTimes"]=missionObjects[mission].times;
-    // locationState.state["missionLoc"]=missionObjects[mission].location;
-    // locationState.state["missionDesc"]=missionObjects[mission].description;
-    // locationState.state["missionContact"]=missionObjects[mission].contact;
-    // locationState.state["missionName"]=mission;
-    // locationState.state["missionId"]=mission.toLowerCase().replace(/ |\//g,"_");

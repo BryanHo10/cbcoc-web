@@ -27,7 +27,7 @@ class EventItem extends React.Component {
                         <p>{this.props.desc}</p>
                     </div>
                     <div className="py-2">
-                        <Link id="backtrack-events" to="/upcoming">
+                        <Link id="backtrack-events" to="/events-upcoming">
                             <h6 id="attach-icon">Back to Events  </h6>
                             <h6 className="fa-solid" id="attach-icon"></h6>
                         </Link>

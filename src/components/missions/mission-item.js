@@ -97,22 +97,3 @@ class MissionItem extends React.Component {
   }
 
 export default MissionItem;
-//   ReactDOM.render(
-//     <MissionItem
-//         date="Every Friday"
-//         time="7:30 PM"
-//         loc="CBCOC"
-//         desc="Everyone loves fromage frais edam. Emmental cottage cheese chalk and cheese squirty cheese cheesecake cottage cheese cheese strings emmental. Monterey jack cheese on toast bavarian bergkase cheese on toast fromage frais who moved my cheese feta cow. Bocconcini pecorino fondue. Fondue cream cheese jarlsberg. Caerphilly cauliflower cheese the big cheese cheese and wine gouda blue castello edam airedale. Goat croque monsieur airedale cheesy grin red leicester babybel paneer st. agur blue cheese. Edam mozzarella."
-//         contact={[
-//             {
-//                 name:"Matthew Yang",
-//                 email:"matthewsyang@gmail.com"
-//             },
-//             {
-//                 name:"Donna Wong",
-//                 email:"dw2107@gmail.com"
-//             }
-//         ]}
-//     />,
-//     document.getElementById('fellowship-info')
-//   );

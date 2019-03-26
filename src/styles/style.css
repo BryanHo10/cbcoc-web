@@ -24,6 +24,7 @@
     width:100%;
 }
 #drop-toggle{
+    font-family: "Gotham-Medium";
     background-color: Transparent; 
     background-repeat:no-repeat;
     border: none;
@@ -32,6 +33,15 @@
 #drop-menu{
     /* margin-top:22px; */
     background-color: var(--eggshell);
+    font-family: "Gotham-Medium";
+    text-decoration: none;
+}
+#drop-menu >a:hover{
+    text-decoration: none;
+}
+#drop-menu-item:hover{
+    cursor:pointer;
+    
 }
 #banner-logo{    
     margin-top:22px;

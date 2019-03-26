@@ -16,7 +16,6 @@ function setLocationState(locationState){
     locationState.state={};
 
     for(var fellowshipGroup of fellowshipData.fellowships){
-        console.log(fellowshipGroup);
         if(fellowshipGroup.target_aud === query){
             locationState.state["groupMeet"]=fellowshipGroup.meetings;
             locationState.state["groupTimes"]=fellowshipGroup.times;
@@ -35,9 +34,7 @@ function setLocationState(locationState){
 }
 
 export default ({location})=>(
-    // location is holds props that are passed from previous link
-    // 
-    // Will crash if page is loaded initially without linking
+
     <div>
         {setLocationState(location)}
         <ReactHelmet
@@ -48,7 +45,7 @@ export default ({location})=>(
         />
         <Jumbotron
             desc={location.state.groupAudience} 
-            image="upcoming.png"
+            image={location.state.groupName+".png"}
             title={location.state.groupName} 
             title2=""
         />

@@ -6,7 +6,7 @@ class TriFoldService extends React.Component {
 
   render() {
     return (
-      <div id="service-container" className="border">
+      <div id="service-container">
           <div className="container-fluid pb-5">
             <h1 className="darkblue-tag text-center">&zwnj;{this.props.mainTitle}&zwnj;</h1>
           </div>

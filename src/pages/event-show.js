@@ -3,7 +3,6 @@ import Toolbar from "../components/toolbar"
 import FooterNav from "../components/footerNav"
 import Jumbotron from "../components/jumbotron"
 import EventItem from "../components/events/event-item"
-import EventNavigation from "../components/events/event-nav"
 import ReactHelmet from "../components/head";
 
 
@@ -21,7 +20,7 @@ export default ({location})=>(
         { console.log(location)}
         <Jumbotron
             desc=""
-            image="upcoming.png"
+            image=""
             title={location.state.eventName} 
             title2="" 
         />
@@ -33,7 +32,6 @@ export default ({location})=>(
             id={1}
         />
 
-        <EventNavigation/>
         <FooterNav/>
 
     </div>

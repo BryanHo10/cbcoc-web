@@ -29,7 +29,7 @@ export default ({location})=>(
 			title="MISSION TRIPS" 
 			title2="" 
 		/>
-		<div className="row container-fluid">
+		<div className="row container-fluid py-2">
 		  {
 				
 			Object.keys(missionJSON).map((mission) => {
