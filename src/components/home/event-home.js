@@ -11,10 +11,10 @@ class EventHome extends React.Component {
             <img id="event-image" alt="" src={withPrefix("img/" + this.props.image)}></img>
 
             <div id = "upcoming-info" className="container border">
-              <h3 className="darkblue-tag in-front">{this.props.title}</h3>
-              <p>{this.props.description}</p>
+              <h3 className="darkblue-tag in-front gotham-bold">Upcoming Event</h3>
+              <p className="gotham-book">Come join us at this <br/>upcoming event that’s <br/>happening really soon!</p>
               <Link id="backtrack-events" to="/events">
-                            <h6 id="attach-icon">View Event Details  </h6>
+                            <h6 id="attach-icon" className="gotham-med">View Event Details  </h6>
                             <h6 className="fa-solid" id="attach-icon"></h6>
                         </Link>
             </div>

@@ -10,7 +10,7 @@ class FooterNav extends React.Component{
             <div className="container-fluid">
             <div className="row">
                 <div id="contact-info" className="col-md">
-                        <b>CONTACT</b><br/><br/>
+                        <p  className="gotham-med">CONTACT</p>
                         412 East Broadway <br/>Anaheim, California 92805<br/><br/> 714-533-6681<br/> secretary.cbcoc.org
                 </div>
             
@@ -18,7 +18,7 @@ class FooterNav extends React.Component{
                 <div className="container-fluid">
                 <div className="row">
                     <div className="col-md">
-                        <p className="footer-head"><b>ABOUT</b></p>
+                        <p className="footer-head">ABOUT</p>
                         <ul className="sub-list">
                             <li><Link to="/vision">Vision</Link></li>
                             <li><Link to="/statement">Statement of Faith</Link></li>
@@ -27,21 +27,21 @@ class FooterNav extends React.Component{
 
                     </div>
                     <div className="col-md">
-                        <p className="footer-head"><b>MINISTRIES</b></p>
+                        <p className="footer-head">MINISTRIES</p>
                         <ul className="sub-list">
                             <li><Link to="/fellowships">Fellowship Groups</Link></li>
                             <li><Link to="/missions">Mission Trips</Link></li>
                         </ul>
                     </div>
                     <div className="col-md">
-                        <p className="footer-head"><b>EVENTS</b></p>
+                        <p className="footer-head">EVENTS</p>
                         <ul className="sub-list">
                             <li><Link to="/events-upcoming">Upcoming Events</Link></li>
                             <li><Link to="/calendar">Calendar</Link></li>
                         </ul>
                     </div>
                     <div className="col-md">
-                        <p className="footer-head"><b>SERMONS</b></p>
+                        <p className="footer-head">SERMONS</p>
                         <ul className="sub-list">
                             <li>
                                 <Link to="/sermon-eng?page=1"

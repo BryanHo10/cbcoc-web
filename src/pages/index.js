@@ -1,7 +1,7 @@
 import React from "react"
 import Toolbar from "../components/toolbar"
 import FooterNav from "../components/footerNav"
-import Jumbotron from "../components/jumbotron"
+import JumbotronHome from "../components/home/jumbotron-home"
 import VisionHome from "../components/home/vision-home"
 import EventHome from "../components/home/event-home"
 import ServiceHome from "../components/home/service-home"
@@ -20,11 +20,8 @@ export default ({location}) => (
     <Toolbar
       isSolid={false}
     />
-    <Jumbotron
-        desc="Come for a visit this Sunday!"
+    <JumbotronHome
         image="church.png"
-        title="WELCOME" 
-        title2="" 
     />
     <VisionHome/>
     <ServiceHome/>
@@ -33,11 +30,7 @@ export default ({location}) => (
       title="Upcoming Event"
       description="Come join us at this upcoming event that’s happening really soon!"
     />
-    <SermonHome
-      title="Latest Sermon"
-      passage="Hear the most recent sermon or catch up on those from prior months"
-      speaker="Jamie Kwok"
-    />
+    <SermonHome/>
     <FooterNav/>
   </div>
 )
