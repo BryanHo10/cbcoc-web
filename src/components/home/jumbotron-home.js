@@ -7,7 +7,8 @@
 // Belize, East Asia, Fellowshop Groups, Event Name, Blast, etc
 
 import React from "react"
-import {withPrefix} from "gatsby"
+import {withPrefix,Link} from "gatsby"
+import {Button} from "reactstrap"
 
 class JumbotronHome extends React.Component {
   //Probably should take a MainObject instead of individual props.
@@ -26,8 +27,12 @@ class JumbotronHome extends React.Component {
             
             <h2>Welcome to Chinese <br/>Baptist Church of <br/>Orange County</h2>
             <div className="py-5"> 
-            <button className="btn mr-4">Come Visit Us</button>
-            <button className="btn">See our Beliefs</button>
+            <Link to="/visit">
+              <Button id="jumbo-button" className="btn mr-4" >Come Visit Us</Button>
+            </Link>
+            <Link to="/statement">
+              <Button id="jumbo-button" className="btn">See our Beliefs</Button>
+            </Link>
             </div>
             {/* <div className="jumbo-buffer"></div> */}
         </div>

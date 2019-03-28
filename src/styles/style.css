@@ -192,7 +192,9 @@
 .jumbo-home > div{
     padding-left: 15vh;
 }
-.jumbo-home > div > button{
+#jumbo-button{
+    background-color: Transparent; 
+    background-repeat:no-repeat;
     font-family:"Gotham-Bold";
     border:2px solid white;
     color:white;

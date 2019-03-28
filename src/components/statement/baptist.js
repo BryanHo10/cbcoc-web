@@ -11,7 +11,7 @@ class BaptistFaithMessage extends React.Component{
                         let linkID=topic.replace(/ /g,'_');
                         return(
                             <div>
-                                <h1 id={linkID} className="gotham-med">{topic}</h1>
+                                <h1 id={linkID} className="darkblue-tag gotham-med">{topic}</h1>
                                 {
                                     statementFaith[topic].map((subsections)=>{
                                         return(
@@ -30,7 +30,7 @@ class BaptistFaithMessage extends React.Component{
                         Object.keys(statementFaith).map((topic)=>{
                             let linkID=topic.replace(/ /g,'_');
                             return(
-                                <a className="gotham-bold" href={"#"+linkID} >{topic}</a>
+                                <a className="darkblue-tag gotham-bold" href={"#"+linkID} >{topic}</a>
                             );
     
                         })
