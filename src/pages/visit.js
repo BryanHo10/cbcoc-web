@@ -49,7 +49,7 @@ export default ({location}) => (
         threeTime="9:15 - 10:30 AM"
         threeLoc=""
     />
-    <h4 className="darkblue-tag text-center container-fluid pb-4">Ask your pastor which Sunday School to attend.</h4>
+    <h4 className="darkblue-tag text-center container-fluid pb-4 gotham-med">Ask your pastor which Sunday School to attend.</h4>
     <TriFoldService
         mainTitle=""
         oneTitle="Preschool"
@@ -62,7 +62,7 @@ export default ({location}) => (
         threeTime="10:45 AM - 12:00 PM"
         threeLoc=""
     />
-    <h4 className="darkblue-tag text-center container-fluid pb-4">Please stay for lunch. Guests eat for free.</h4>
+    <h4 className="darkblue-tag text-center container-fluid pb-4 gotham-med">Please stay for lunch. Guests eat for free.</h4>
     <MapView/>
     <ParkingView/>
     <ContactForm/>

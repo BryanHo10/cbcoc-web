@@ -16,9 +16,10 @@ class MissionTile extends React.Component{
     }
     render(){
         return(
-            <div className="col-md-6 text-center">
+            <div className="col-md-6 text-center py-5">
                 <img id="group-img-card" alt="" src={withPrefix(this.state.uri)} onError={()=>this.setState({uri:"img/unavailable.png"})}></img>
                 <Link to={'/mission-show?id='+this.props.name}
+                    id="underline-link"
                     state={{
                         missionId:this.props.id,
                         missionName:this.props.name,
@@ -32,7 +33,7 @@ class MissionTile extends React.Component{
                         missionParticipate:this.props.participate                        
                         }}                
                 >
-                    <h3>{this.props.name}</h3>
+                    <h3 className="gotham-med darkblue-tag">{this.props.name}</h3>
                 </Link>
             </div>
         );

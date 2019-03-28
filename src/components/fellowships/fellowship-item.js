@@ -14,20 +14,20 @@ class FellowshipItem extends React.Component {
             <div className="row">
                 <div id="column-info" className="col-md-3">
                     <div className="py-2">
-                        <h5 className="darkblue-tag">Meeting Times</h5>
-                        <p>{this.props.date}<br/>{this.props.time}</p>
+                        <h5 className="darkblue-tag gotham-med">Meeting Times</h5>
+                        <p className="serifpro">{this.props.date}<br/>{this.props.time}</p>
                     </div>
                     <div className="py-2">
-                        <h5 className="darkblue-tag">Location</h5>
-                        <p>{this.props.loc}</p>
+                        <h5 className="darkblue-tag gotham-med">Location</h5>
+                        <p className="serifpro">{this.props.loc}</p>
                     </div>
                     <div className="py-2">
-                        <h5 className="darkblue-tag">Contact</h5>
+                        <h5 className="darkblue-tag gotham-med">Contact</h5>
                         {
                            //Dynamically outputs formatted List of Contact information for all persons
                            this.props.contact.map((leader)=>{
                             return(<div className="py-1">
-                                        <p>{leader.name}<br/>{leader.email}</p>
+                                        <p className="serifpro">{leader.name}<br/>{leader.email}</p>
                                     </div>
                                 );
                            })
@@ -36,12 +36,12 @@ class FellowshipItem extends React.Component {
                 </div>
                 <div id="column-info" className="col-md">
                     <div className="py-2">
-                        <h5 className="darkblue-tag">Description</h5>
-                        <p id="desc-view">{this.props.desc}</p>
+                        <h5 className="darkblue-tag gotham-med">Description</h5>
+                        <p id="desc-view" className="serifpro">{this.props.desc}</p>
                     </div>
                     <div className="py-2">
                         <Link id="backtrack-events" to="/fellowships">
-                            <h6 id="attach-icon">Back to Fellowship Groups  </h6>
+                            <h6 id="attach-icon" className="gotham-med">Back to Fellowship Groups  </h6>
                             <h6 className="fa-solid" id="attach-icon"></h6>
                         </Link>
                     </div>

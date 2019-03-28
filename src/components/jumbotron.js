@@ -24,9 +24,9 @@ class Jumbotron extends React.Component {
       <div className="jumbo">
         <img id="jumbo-image" alt="" src={withPrefix(this.state.uri)} onError={()=>this.setState({uri:"img/no-cover.png"})} />
         
-        <h2>{this.props.title}</h2>
+        <h2 className="gotham-bold">{this.props.title}</h2>
         <h2>{this.props.title2}</h2>
-        <h3>{this.props.desc}</h3>
+        <h3 className="gotham-book">{this.props.desc}</h3>
 
         {/* <div className="jumbo-buffer"></div> */}
       </div>

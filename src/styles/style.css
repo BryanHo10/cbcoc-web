@@ -10,15 +10,17 @@
 }
 /* Font styles class names*/
 .fa-solid{
-    font-family: "font-solid"
+    font-family: "font-solid";
 }
 .fa-regular{
-    font-family: "font-regular"
+    font-family: "font-regular";
 }
 .fa-brands{
-    font-family: "font-brands"
+    font-family: "font-brands";
 }
-
+.color-gray{
+    color:var(--lightgray);
+}
 .gotham-med{
     font-family:"Gotham-Medium";
 }
@@ -27,6 +29,9 @@
 }
 .gotham-book{
     font-family:"Gotham-Book";
+}
+.serifpro{
+    font-family:"SourceSerifPro";
 }
 
 /* Toolbar Style */
@@ -154,7 +159,6 @@
     width: 100%;
 }
 .jumbo > h2 {
-    font-weight: 700;
     font-size: 500%;
     color: white;
     text-align: center;
@@ -162,8 +166,7 @@
 }
 
 .jumbo > h3 {
-    font-weight: 400;
-    font-size: 300%;
+    font-size: 250%;
     color: white;
     text-align: center;
     padding-top: 5vh;

@@ -13,22 +13,22 @@ class EventItem extends React.Component {
             <div className="row">
                 <div id="column-info" className="col-md-3">
                     <div className="py-2">
-                        <h5 className="darkblue-tag">{"Date & Time"}</h5>
-                        <p>{this.props.date}<br/>{this.props.time}</p>
+                        <h5 className="darkblue-tag gotham-med">{"Date & Time"}</h5>
+                        <p className="serifpro">{this.props.date}<br/>{this.props.time}</p>
                     </div>
                     <div className="py-2">
-                        <h5 className="darkblue-tag">Location</h5>
-                        <p>{this.props.loc}</p>
+                        <h5 className="darkblue-tag gotham-med">Location</h5>
+                        <p className="serifpro">{this.props.loc}</p>
                     </div>
                 </div>
                 <div id="column-info" className="col-md-7">
                     <div className="py-2">
-                        <h5 className="darkblue-tag">Description</h5>
-                        <p>{this.props.desc}</p>
+                        <h5 className="darkblue-tag gotham-med">Description</h5>
+                        <p className="serifpro">{this.props.desc}</p>
                     </div>
                     <div className="py-2">
                         <Link id="backtrack-events" to="/events-upcoming">
-                            <h6 id="attach-icon">Back to Events  </h6>
+                            <h6 id="attach-icon" className="gotham-med">Back to Events  </h6>
                             <h6 className="fa-solid" id="attach-icon"></h6>
                         </Link>
                     </div>

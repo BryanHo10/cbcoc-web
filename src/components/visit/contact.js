@@ -16,8 +16,8 @@ class ContactForm extends React.Component{
         let responseButtonStyle={display:`${!this.state.hasSent ? "block":"none"}`};
         return(
             <div className="text-center container-fluid py-3">
-                <h1 className="darkblue-tag pb-4">Contact Us</h1>
-                <h4 className="darkblue-tag pb-4">We would love to hear<br/>from you.</h4>
+                <h1 className="darkblue-tag pb-4 gotham-med">Contact Us</h1>
+                <h4 className="darkblue-tag pb-4 gotham-book">We would love to hear<br/>from you.</h4>
                 <div id="contact-input">
                     <form method="post" onSubmit={e => this.handleFormSubmit(e)} autoComplete="off" action="../../scripts/contact.php">
                         <input  className="container-fluid form-control form-control-lg" type="text" name="" placeholder="Name"

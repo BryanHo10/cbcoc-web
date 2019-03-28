@@ -22,9 +22,9 @@ class EventPreview extends React.Component {
 
                 </div>
                 <div className="col-md-6 py-5">
-                    <h5>{this.props.name}</h5>
-                    <p>{this.props.date}<br/>{this.props.loc}</p>
-                    <p id="short-desc">{this.props.desc}</p>
+                    <h5 className="gotham-med">{this.props.name}</h5>
+                    <p className="gotham-book color-gray">{this.props.date}<br/>{this.props.loc}</p>
+                    <p className="serifpro" id="short-desc">{this.props.desc}</p>
                     <Link 
                         id="backtrack-events" 
                         to={"/event-show"}
@@ -35,7 +35,7 @@ class EventPreview extends React.Component {
                             eventDate:this.props.date                            
                             }}
                     >
-                            <h6 id="attach-icon">View Event Details  </h6>
+                            <h6 className="gotham-med" id="attach-icon">View Event Details  </h6>
                             <h6 className="fa-solid" id="attach-icon"></h6>
                     </Link>
                 </div>

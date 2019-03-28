@@ -8,21 +8,21 @@ class TriFoldService extends React.Component {
     return (
       <div id="service-container">
           <div className="container-fluid pb-5">
-            <h1 className="darkblue-tag text-center">&zwnj;{this.props.mainTitle}&zwnj;</h1>
+            <h1 className="darkblue-tag text-center gotham-med">&zwnj;{this.props.mainTitle}&zwnj;</h1>
           </div>
-          <div>
+          <div className="py-3">
             <div id="tri-info" className="row">
               <div className="col-sm text-center ">
-                <h3 className="darkblue-tag">{this.props.oneTitle}</h3>
-                <p>{this.props.oneTime}<br/>{this.props.oneLoc}</p>
+                <h4 className="darkblue-tag gotham-med">{this.props.oneTitle}</h4>
+                <p className="gotham-book">{this.props.oneTime}<br/>{this.props.oneLoc}</p>
               </div>
               <div className="col-sm text-center">
-                <h3 className="darkblue-tag">{this.props.twoTitle}</h3>
-                <p>{this.props.twoTime}<br/>{this.props.twoLoc}</p>
+                <h4 className="darkblue-tag gotham-med">{this.props.twoTitle}</h4>
+                <p className="gotham-book">{this.props.twoTime}<br/>{this.props.twoLoc}</p>
               </div>
               <div className="col-sm text-center ">
-                <h3 className="darkblue-tag">{this.props.threeTitle}</h3>
-                <p>{this.props.threeTime}<br/>{this.props.threeLoc}</p>
+                <h4 className="darkblue-tag gotham-med">{this.props.threeTitle}</h4>
+                <p className="gotham-book">{this.props.threeTime}<br/>{this.props.threeLoc}</p>
               </div>
             </div>
           </div>
