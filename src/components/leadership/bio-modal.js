@@ -1,14 +1,22 @@
 import React from "react"
 import {withPrefix} from "gatsby"
+import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 class LeaderCard extends React.Component {
 
     constructor(props) {
         super(props);
-        console.log(this.props.id);
         this.state = {
-          uri:"img/leadership/" + this.props.id+".jpg"
+          uri:"img/leadership/" + this.props.id+".jpg",
+          modal:false
         };
+        this.toggle = this.toggle.bind(this);
+    }
+  
+    toggle() {
+      this.setState(prevState => ({
+        modal: !prevState.modal
+      }));
     }
     
 
@@ -19,35 +27,30 @@ class LeaderCard extends React.Component {
       return (
         <div className="col-md-4">
                 {/* <!-- Trigger the modal with a clickable card of leader's picture and name --> */}
-                <div className="container text-center" data-toggle="modal" data-target={"#"+this.props.id}>
-                    <img className="leader-img-card" alt="" src={withPrefix(this.state.uri)} onError={()=>this.setState({uri:"img/leadership/no-photo.png"})}/>
-                    <h3>{this.props.name}</h3>
-                    <p>{this.props.title}</p>
+                <div className="container text-center">
+                    <img className="leader-img-card" alt="" src={withPrefix(this.state.uri)} onError={()=>this.setState({uri:"img/leadership/no-photo.png"})} onClick={this.toggle}/>
+                    <h3 className="gotham-med" onClick={this.toggle}>{this.props.name}</h3>
+                    <p className="gotham-book" onClick={this.toggle}>{this.props.title}</p>
                 </div>
 
-                {/* <!-- Modal --> */}
-            <div id={this.props.id} className="modal fade" role="dialog">
-                <div className="modal-dialog modal-dialog-centered">
-
-                {/* <!-- Modal content--> */}
-                    <div className="modal-content">
-                        <div className="modal-header">
-                        <h4 className="modal-title">{this.props.name}</h4>
-                            <button type="button" className="close" data-dismiss="modal">&times;</button>
-                            
+            <Modal id="leader-modal" isOpen={this.state.modal} toggle={this.toggle} size="lg">
+                <ModalHeader toggle={this.toggle}></ModalHeader>
+                <ModalBody>
+                    <div className="container-fluid row">
+                        <div className="col-md-6">
+                            <img className="leader-img-modal" alt="" src={withPrefix(this.state.uri)} onError={()=>this.setState({uri:"img/leadership/no-photo.png"})}/>
                         </div>
-
-                        {/* Leader's Bio */}
-                        <div className="modal-body">
-                            <p>{this.props.desc}</p>
+                        <div className="col-md-6">
+                            <h4 className="gotham-med">{this.props.name}</h4>
+                            <h6 className="gotham-book">{this.props.title}</h6>
+                            <br/>
+                            <p id="desc-modal" className="serifpro">{this.props.desc}</p>
                         </div>
-
-                        <div className="modal-footer">
-                            <button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                   
+                   </div>
+                </ModalBody>
+                <ModalFooter/>
+            </Modal>
         </div>
 
       );
@@ -59,25 +62,3 @@ class LeaderCard extends React.Component {
   
 
   export default LeaderCard;
-
-//   ReactDOM.render(
-//       <div id="leader-info" className="row">
-
-//         {/* Pushing each item in the list of leaders || staff: Person object */}
-//         {staffList.map((staff)=>{
-//             return (
-//                 <LeaderCard
-//                     name={staff.name}
-//                     title={staff.position}
-//                     id={staff.image_id}
-//                     desc={staff.description}
-//                     index={staff.id}            
-//                 />
-
-
-//             );
-//         } )}
-        
-//     </div>,
-//     document.getElementById('leader-info')
-//   );

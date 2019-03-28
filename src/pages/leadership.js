@@ -19,7 +19,7 @@ let staffList = leadershipData.leaders;
         isSolid={true}
       />
 
-      <h1 id="leader-title" className="py-3">Leadership</h1>
+      <h1 id="leader-title" className="py-3 gotham-bold">Leadership</h1>
 
       <div id="leader-info" className="row container-fluid">
 

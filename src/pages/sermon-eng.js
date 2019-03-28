@@ -33,7 +33,7 @@ export default ({location}) => (
             isSolid={true}
         />
         {setSermonDisplay(location)}
-        <h1 id="leader-title" className="py-3">English Service Sermons</h1>
+        <h1 id="leader-title" className="py-3 gotham-bold">English Service Sermons</h1>
         <h3 id="leader-title" className="py-3">Page: {pageNumber}</h3>
 
             {/* Pushing each item in the list of leaders || staff: Person object */}
@@ -55,7 +55,6 @@ export default ({location}) => (
   
 function setSermonDisplay(locationState){
 
-    console.log(locationState);
     
     if(locationState.state === null){
         // Extracts URL Parameters to identify current page ?page=#

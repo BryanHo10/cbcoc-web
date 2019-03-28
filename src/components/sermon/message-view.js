@@ -29,19 +29,30 @@ class MessageView extends React.Component {
 		return(
 			<div className="container-fluid row py-3">
 				<div className="col-lg-2 text-center">
-					<h5>{year}</h5>	
-					<h1>{month}<br/>{day}</h1>	
+					<h5 className="gotham-bold">{year}</h5>	
+					<h1 className="gotham-bold">{month}<br/>{day}</h1>	
 				</div> 
 				<div className="col-lg">
-					<h2 id="message-title">{this.props.title}</h2>
-					<h4>{this.props.speaker}<br/>{this.props.passage}</h4>
+					<h2 id="message-title" className="gotham-med">{this.props.title}</h2>
+					<h5 className="gotham-book pb-4">{this.props.speaker}<br/>{this.props.passage}</h5>
+
 					<audio controls className="container-fluid">
 						<source src={this.props.audio_link} />
 					</audio>	
 				</div>
 				<div className="col-lg-2">
-					<h5 className="fa-solid"><a href={this.props.audio_link} download> Download</a></h5>
-					<h5 className="fa-solid"><a href={this.props.audio_link}> Link</a></h5>
+					<div>
+						<a href={this.props.audio_link}>
+							<h6 className="fa-solid" id="attach-icon"></h6>
+							<h6 id="attach-icon" className="gotham-book">  Download</h6>
+						</a>
+					</div>
+					<div>
+						<a href={this.props.audio_link}>
+							<h6 className="fa-solid" id="attach-icon"></h6>
+							<h6 id="attach-icon" className="gotham-book">  Link</h6>
+						</a>
+					</div>
 				</div>  
 			</div>
 		);

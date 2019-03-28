@@ -3,7 +3,14 @@
     width:70%;
     height:auto;
 }
+.leader-img-modal{
+    width:90%;
+    height:auto;
+}
 
 #leader-title{
     margin-left: 6%;
+}
+#desc-modal{
+    font-size:90%;
 }
