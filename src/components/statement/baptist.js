@@ -30,7 +30,7 @@ class BaptistFaithMessage extends React.Component{
                         Object.keys(statementFaith).map((topic)=>{
                             let linkID=topic.replace(/ /g,'_');
                             return(
-                                <a className="darkblue-tag gotham-bold" href={"#"+linkID} >{topic}</a>
+                                <a className="darkblue-tag gotham-book" href={"#"+linkID} >{topic}</a>
                             );
     
                         })

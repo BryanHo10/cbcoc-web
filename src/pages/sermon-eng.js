@@ -68,7 +68,8 @@ function setSermonDisplay(locationState){
         };
     }
     else{
-        pageNumber=locationState.state.currentPage;
+        if(locationState.state)
+            pageNumber=locationState.state.currentPage;
     }
 
     // True/False - determine "hidden" style for navigations

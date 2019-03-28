@@ -25,6 +25,7 @@ class FellowshipItem extends React.Component {
                         <h5 className="darkblue-tag gotham-med">Contact</h5>
                         {
                            //Dynamically outputs formatted List of Contact information for all persons
+                           this.props.contact &&
                            this.props.contact.map((leader)=>{
                             return(<div className="py-1">
                                         <p className="serifpro">{leader.name}<br/>{leader.email}</p>
