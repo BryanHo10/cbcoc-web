@@ -25,7 +25,7 @@ class LeaderCard extends React.Component {
     render() {
       
       return (
-        <div className="col-md-4">
+        <div className="col-md-4 py-5">
                 {/* <!-- Trigger the modal with a clickable card of leader's picture and name --> */}
                 <div className="container text-center">
                     <img className="leader-img-card" alt="" src={withPrefix(this.state.uri)} onError={()=>this.setState({uri:"img/leadership/no-photo.png"})} onClick={this.toggle}/>

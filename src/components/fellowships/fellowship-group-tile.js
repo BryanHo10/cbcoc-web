@@ -20,7 +20,7 @@ class GroupTile extends React.Component{
             <div className="col-md-6 text-center py-5">
                 <img id="group-img-card" alt="" src={withPrefix(this.state.uri)} onError={()=>this.setState({uri:"img/unavailable.png"})}></img>
                 <Link to={'/fellowship-show?id='+this.props.target_aud}
-                    id="fellowship-link"
+                    id="underline-link"
                     state={{
                         groupId:this.props.target_aud,
                         groupName:this.props.name,
