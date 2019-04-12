@@ -13,7 +13,7 @@ class EventHome extends React.Component {
             <div id = "upcoming-info" className="container border">
               <h3 className="darkblue-tag in-front gotham-bold">Upcoming Event</h3>
               <p className="gotham-book">Come join us at this <br/>upcoming event that’s <br/>happening really soon!</p>
-              <Link id="backtrack-events" to="/events">
+              <Link id="backtrack-events" to="/events-upcoming">
                             <h6 id="attach-icon" className="gotham-med">View Event Details  </h6>
                             <h6 className="fa-solid" id="attach-icon"></h6>
                         </Link>

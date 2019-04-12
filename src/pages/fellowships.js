@@ -26,7 +26,7 @@ export default ({location}) => (
         title="Fellowship Groups" 
         title2="" 
     />
-    <div className="row container-fluid py-5">
+    <div className="row container-fluid pb-5">
       {
         fellowshipJSON.map((fellowship) => {
             return(
