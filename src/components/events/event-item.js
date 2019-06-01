@@ -3,6 +3,9 @@ import {Link} from "gatsby"
 
 //  PROPS: DATE | TIME | LOC | DESC | NAME | id
 
+//EventItem: View of the full description of event including the dates, time, location, and title
+//           Event Data will be fetched from CBCOC_EVENT_DB
+//           (temp) Hard-coded filler information
 class EventItem extends React.Component {
 
     render() {

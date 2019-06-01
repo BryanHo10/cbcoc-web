@@ -1,6 +1,10 @@
 import React from "react"
 import {Link} from "gatsby"
 
+//EventNavigation: Allows for users to navigate to older/newer events in the Database
+//                 Should identify between upcoming events and past events 
+//
+// Todo: Implement pagination on event's page (copy Sermon Page) 
 class EventNavigation extends React.Component {
     render(){
         return(

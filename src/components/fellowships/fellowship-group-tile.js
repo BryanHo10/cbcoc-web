@@ -3,7 +3,13 @@ import {withPrefix, Link} from "gatsby"
 
 //  PROPS: DATE | MEETING_TIME | LOCATION | DESC | CONTACT ARRAY(name,email) | id | audience
 
-
+//  GroupTile: Lists all fellowships styled in a 2 column table
+//              Selection will redirect the user to fellowship_show.js
+//              Data fetched from cbcoc_fellowship.json
+//  Routing: Links associated with each item are stored with each group's properties
+//           fellowship_show.js handles data
+//           
+//      
 //  id = lowercase with "_" and replacing whitespace and "/" (i.e. middle_high_school)
 
 class GroupTile extends React.Component{

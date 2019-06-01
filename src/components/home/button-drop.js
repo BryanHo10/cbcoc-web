@@ -2,7 +2,8 @@ import React from "react"
 import {Link} from "gatsby"
 import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
-
+// MenuDrop: Handles dropdown menus for toolbar 
+//           Implemented code from reactstrap.github.io 
 class MenuDrop extends React.Component{
     constructor(props) {
         super(props);

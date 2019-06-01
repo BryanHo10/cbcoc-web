@@ -1,10 +1,11 @@
 import React from "react"
 import {withPrefix, Link} from "gatsby"
 
-//Display a small snippet of Event
-//Compiled of 3 previews per page
-
 // PROPS: NAME | DATE | LOC | DESC | img | id
+
+// EventPreview: View of small snippets of a number of events (Default: 3 events)
+//               Selection of Item will redirect user to event-show.js
+
 class EventPreview extends React.Component {
     constructor(props){
         super(props);

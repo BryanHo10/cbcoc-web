@@ -1,6 +1,10 @@
 //  PROPS: DATE | TIME | LOCATION | DESC | CONTACT ARRAY(name,email)
 import React from "react"
 import {Link} from "gatsby"
+
+// FellowshipItem: View of full description of fellowship group including date, time, location, contact info of leaders
+//                  Data fetched from cbcoc_fellowship.json
+
 class FellowshipItem extends React.Component {
 
 
