@@ -35,9 +35,7 @@ function setLocationState(locationState){
 }
 
 export default ({location})=>(
-    // location is holds props that are passed from previous link
-    // 
-    // Will crash if page is loaded initially without linking
+
     <div>
         {setLocationState(location)}
         <ReactHelmet

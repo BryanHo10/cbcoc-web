@@ -1,5 +1,6 @@
 import React from "react"
 
+// Displays Vision statement w/ font-style and color attached
 
 class VisionHome extends React.Component {
 
@@ -17,7 +18,3 @@ class VisionHome extends React.Component {
   }
   
   export default VisionHome;
-  // ReactDOM.render(
-  //   <Vision_Home/>,
-  //   document.getElementById('vision-container')
-  // );

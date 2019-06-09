@@ -1,6 +1,8 @@
 import React from "react"
 import {withPrefix, Link} from "gatsby"
 
+// Sets image and content on home page
+// Props: image: (string) = name of img file 
 
 class SermonHome extends React.Component {
     render() {
@@ -16,7 +18,7 @@ class SermonHome extends React.Component {
               <Link to="/sermon-eng" id="latest-button" className="btn border gotham-bold">Listen Now</Link>
             </div>
             <div className="col-sm-6" style={{padding:0}}>
-            <img id="bible-img" alt="" src={withPrefix("img/bible.png")} ></img>
+            <img id="bible-img" alt="" src={withPrefix("img/" + this.props.image)} ></img>
             </div>
           </div>
         </div>

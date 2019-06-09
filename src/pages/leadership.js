@@ -29,7 +29,7 @@ let staffList = leadershipData.leaders;
                 <LeaderCard
                     name={staff.name}
                     title={staff.position}
-                    id={staff.image_id}
+                    image_id={staff.image_id}
                     desc={staff.description}
                     index={staff.id}            
                 />

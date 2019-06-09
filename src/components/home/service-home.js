@@ -1,5 +1,7 @@
 import React from "react"
 
+// Displays all services and the times of their service
+
 class ServiceHome extends React.Component {
 
   render() {
@@ -31,7 +33,3 @@ class ServiceHome extends React.Component {
 }
 
 export default ServiceHome;
-// ReactDOM.render(
-//   <Service_Home/>,
-//   document.getElementById('services-container')
-// );

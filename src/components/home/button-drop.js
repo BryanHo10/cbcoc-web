@@ -4,6 +4,8 @@ import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reac
 
 // MenuDrop: Handles dropdown menus for toolbar 
 //           Implemented code from reactstrap.github.io 
+// Props: header: (string) | menuItems: (List<string>)
+
 class MenuDrop extends React.Component{
     constructor(props) {
         super(props);
@@ -26,12 +28,15 @@ class MenuDrop extends React.Component{
               <DropdownToggle size="lg" id="drop-toggle">
                 {this.props.header}
               </DropdownToggle>
+              {/* Passed from Toolbar.js */}
               <DropdownMenu id="drop-menu">
                   {
                       Object.keys(this.props.menuItems).map((navItem)=>{
                           return(
                             <Link to={this.props.menuItems[navItem]}
                                   state={{
+                                    // Currently, only Sermon page accesses state variable
+                                    // Easier to set all of them instead of checking name parameter
                                     currentPage:1
                                 }}
                               >

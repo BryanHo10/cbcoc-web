@@ -27,10 +27,10 @@ export default ({location}) => (
     <ServiceHome/>
     <EventHome
       image="event-test.png"
-      title="Upcoming Event"
-      description="Come join us at this upcoming event that’s happening really soon!"
     />
-    <SermonHome/>
+    <SermonHome
+      image="bible.png"
+    />
     <FooterNav/>
   </div>
 )
